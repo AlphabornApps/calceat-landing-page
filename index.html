@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Calceat - Calculate and track your nutrition with ease" />
     <title>Calceat - Smart Nutrition Tracker</title>
+    
+    <!-- GitHub Pages client-side routing fallback handler -->
+    <script>
+      // Check if we were redirected from 404.html with route information
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        const redirectPath = params.get('p');
+        const redirectSearch = params.get('q');
+        
+        if (redirectPath) {
+          // Build the intended URL
+          const intendedPath = '/' + redirectPath;
+          const intendedSearch = redirectSearch ? '?' + redirectSearch : '';
+          const intendedUrl = intendedPath + intendedSearch;
+          
+          // Replace the current history entry to the intended URL
+          // This ensures React Router sees the correct URL when it loads
+          window.history.replaceState({}, '', intendedUrl);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
