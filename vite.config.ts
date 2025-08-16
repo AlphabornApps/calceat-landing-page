@@ -6,8 +6,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Base URL for GitHub Pages with custom domain
-  // Use relative paths to ensure proper asset loading
-  base: './',
+  // Use absolute paths for clean URLs with BrowserRouter
+  base: '/',
   server: {
     port: 3000,
     open: true, // Automatically open browser on server start

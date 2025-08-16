@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- 
+    GitHub Pages 404 fallback for single-page applications
+    This file redirects all 404 requests to index.html to enable client-side routing
+    
+    When someone visits /delete-account or any other route directly:
+    1. GitHub Pages returns this 404.html file
+    2. JavaScript redirects to index.html with the original path stored
+    3. React Router takes over and renders the correct component
+  -->
+  <title>CalcEat - Page Not Found</title>
+  <script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    
+    // This script checks if the current URL is a 404 page and redirects
+    // to the index page with the path encoded in the hash for the client-side router
+    var pathSegmentsToKeep = 1;
+
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body>
+  <!-- Fallback content in case JavaScript is disabled -->
+  <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+    <h1>Page Not Found</h1>
+    <p>Redirecting to CalcEat homepage...</p>
+    <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+  </div>
+</body>
+</html>
