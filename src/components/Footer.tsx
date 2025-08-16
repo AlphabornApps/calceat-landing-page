@@ -38,6 +38,7 @@ const Footer: React.FC = () => {
             <ul className="footer-links">
               <li><Link to="/privacy">Privacy Policy</Link></li>
               <li><Link to="/terms">Terms of Service</Link></li>
+              <li><Link to="/delete-account">Delete Account</Link></li>
             </ul>
           </div>
           

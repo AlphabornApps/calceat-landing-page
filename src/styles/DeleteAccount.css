@@ -1,0 +1,275 @@
+/* Delete Account Page Styles */
+.delete-account {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 2rem 0;
+  line-height: 1.6;
+}
+
+.delete-account .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Section */
+.header {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Warning Section */
+.warning-section {
+  margin-bottom: 2rem;
+}
+
+.warning-box {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border: 2px solid #fecaca;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.warning-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.warning-content h2 {
+  color: #dc2626;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.warning-content p {
+  color: #7f1d1d;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Info Sections */
+.info-section,
+.instructions-section,
+.alternatives-section,
+.help-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2,
+.instructions-section h2,
+.alternatives-section h2,
+.help-section h2 {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+/* Deletion List */
+.deletion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deletion-list li {
+  background: #f3f4f6;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #ef4444;
+  position: relative;
+}
+
+.deletion-list li::before {
+  content: '✗';
+  color: #ef4444;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Steps Section */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.step-number {
+  background: #6366f1;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.step-content p {
+  color: #4b5563;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Alternatives Section */
+.alternatives-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.alternatives-list li {
+  background: #f0f9ff;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #0ea5e9;
+}
+
+.alternatives-list li strong {
+  color: #0c4a6e;
+}
+
+/* Help Section */
+.help-section p {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.help-section p:last-child {
+  margin-bottom: 0;
+}
+
+.help-section a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.help-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Navigation */
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.footer-nav a:hover {
+  background-color: #f0f9ff;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .delete-account {
+    padding: 1rem 0;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .warning-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-number {
+    align-self: center;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .delete-account .container {
+    padding: 0 0.5rem;
+  }
+
+  .info-section,
+  .instructions-section,
+  .alternatives-section,
+  .help-section {
+    padding: 1.5rem;
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+}

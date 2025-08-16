@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LandingPage from './components/LandingPage'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsConditions from './components/TermsConditions'
+import DeleteAccount from './components/DeleteAccount'
 import './styles/App.css'
 
 /**
@@ -11,6 +12,7 @@ import './styles/App.css'
  * - "/" - Main landing page with hero, features, and footer
  * - "/privacy" - Privacy policy page for the CalcEat app
  * - "/terms" - Terms & Conditions page for the CalcEat app
+ * - "/delete-account" - Account deletion guidance page for users
  * 
  * Uses React Router for clean URL navigation and better SEO
  */
@@ -27,6 +29,9 @@ function App() {
           
           {/* Terms & Conditions page route */}
           <Route path="/terms" element={<TermsConditions />} />
+          
+          {/* Delete account guidance page route */}
+          <Route path="/delete-account" element={<DeleteAccount />} />
         </Routes>
       </div>
     </Router>
