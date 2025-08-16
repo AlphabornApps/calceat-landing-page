@@ -13,7 +13,7 @@ export default defineConfig({
     open: true, // Automatically open browser on server start
   },
   build: {
-    outDir: 'dist',
+    outDir: 'docs', // GitHub Pages looks for files in docs/ folder
     sourcemap: true, // Enable source maps for better debugging
     // Ensure assets are properly handled for GitHub Pages
     assetsDir: 'assets',
