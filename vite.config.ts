@@ -5,9 +5,9 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Base URL for GitHub Pages with custom domain
-  // Use relative paths to ensure proper asset loading
-  base: './',
+  // Base URL for custom domain deployment
+  // Use root path for custom domain (calceat.app)
+  base: '/',
   server: {
     port: 3000,
     open: true, // Automatically open browser on server start

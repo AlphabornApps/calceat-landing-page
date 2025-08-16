@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://calceat.app",
   "description": "Landing page for Calceat application",
   "scripts": {
     "dev": "vite",
