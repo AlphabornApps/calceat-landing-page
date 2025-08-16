@@ -1,0 +1,103 @@
+/* Terms & Conditions page styles */
+/* Clean, readable typography focused on easy reading - matches PrivacyPolicy.css */
+
+.terms-conditions {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+}
+
+.terms-content {
+  max-width: 800px;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* Typography styles for easy reading */
+.terms-content strong {
+  font-size: 1.25rem;
+  color: #1f2937;
+  display: block;
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 600;
+}
+
+.terms-content p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.terms-content ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.terms-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Link styles */
+.terms-content a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.terms-content a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Horizontal rule styling */
+.terms-content hr {
+  border: none;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* First heading (main title) gets special styling */
+.terms-content strong:first-child {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #111827;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .terms-conditions {
+    padding: 1rem;
+  }
+  
+  .terms-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .terms-content strong:first-child {
+    font-size: 1.75rem;
+  }
+  
+  .terms-content ul {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-content {
+    padding: 1.5rem 1rem;
+  }
+  
+  .terms-content strong:first-child {
+    font-size: 1.5rem;
+  }
+}

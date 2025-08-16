@@ -1,28 +1,36 @@
 import React from 'react'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import LandingPage from './components/LandingPage'
+import PrivacyPolicy from './components/PrivacyPolicy'
+import TermsConditions from './components/TermsConditions'
 import './styles/App.css'
 
 /**
- * Main App component that serves as the root of the landing page
+ * Main App component that handles routing for the entire application
  * 
- * This component orchestrates the entire landing page layout,
- * including the hero section, features, and footer.
- * It keeps the structure simple and modular for easy maintenance.
+ * This component sets up client-side routing to handle:
+ * - "/" - Main landing page with hero, features, and footer
+ * - "/privacy" - Privacy policy page for the CalcEat app
+ * - "/terms" - Terms & Conditions page for the CalcEat app
+ * 
+ * Uses React Router for clean URL navigation and better SEO
  */
 function App() {
   return (
-    <div className="App">
-      {/* Hero section - main value proposition and call-to-action */}
-      <Hero />
-      
-      {/* Features section - showcase key benefits and features */}
-      <Features />
-      
-      {/* Footer - contact info and links */}
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {/* Main landing page route */}
+          <Route path="/" element={<LandingPage />} />
+          
+          {/* Privacy policy page route */}
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          
+          {/* Terms & Conditions page route */}
+          <Route path="/terms" element={<TermsConditions />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 

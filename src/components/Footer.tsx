@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/Footer.css'
 
 /**
@@ -31,24 +32,12 @@ const Footer: React.FC = () => {
             </button>
           </div>
           
-          {/* Quick links */}
-          <div className="footer-section">
-            <h4 className="footer-heading">Quick Links</h4>
-            <ul className="footer-links">
-              <li><a href="#features">Features</a></li>
-              <li><a href="#how-it-works">How It Works</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#support">Support</a></li>
-            </ul>
-          </div>
-          
           {/* Legal links */}
           <div className="footer-section">
             <h4 className="footer-heading">Legal</h4>
             <ul className="footer-links">
-              <li><a href="#privacy">Privacy Policy</a></li>
-              <li><a href="#terms">Terms of Service</a></li>
-              <li><a href="#cookies">Cookie Policy</a></li>
+              <li><Link to="/privacy">Privacy Policy</Link></li>
+              <li><Link to="/terms">Terms of Service</Link></li>
             </ul>
           </div>
           
@@ -56,9 +45,7 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h4 className="footer-heading">Contact</h4>
             <ul className="footer-links">
-              <li><a href="mailto:hello@calceat.com">hello@calceat.com</a></li>
-              <li><a href="#help">Help Center</a></li>
-              <li><a href="#feedback">Send Feedback</a></li>
+              <li><a href="mailto:alphabornapps@gmail.com">alphabornapps@gmail.com</a></li>
             </ul>
           </div>
         </div>
