@@ -2,6 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/CookieBanner.css'
 
+declare global {
+  interface Window {
+    dataLayer: any[]
+    gtag?: (...args: any[]) => void
+  }
+}
+
 const COOKIE_KEY = 'cookie_consent' // 'essential' | 'all'
 
 /**
