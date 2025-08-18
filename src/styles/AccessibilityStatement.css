@@ -1,0 +1,60 @@
+/* Accessibility Statement Page */
+
+.accessibility-page {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.accessibility-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.accessibility-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.accessibility-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+.accessibility-section ul {
+  margin-left: 1.25rem;
+  list-style: disc;
+}
+
+.accessibility-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* RTL support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Links */
+.accessibility-section a {
+  color: #4c51bf;
+  text-decoration: underline;
+}
+
+.accessibility-section a:hover {
+  color: #5a67d8;
+}

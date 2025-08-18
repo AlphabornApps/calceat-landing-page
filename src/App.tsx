@@ -4,6 +4,9 @@ import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsConditions from './components/TermsConditions'
 import DeleteAccount from './components/DeleteAccount'
 import Support from './components/Support'
+import AccessibilityStatement from './components/AccessibilityStatement'
+import CookieBanner from './components/CookieBanner'
+import CookiePolicy from './components/CookiePolicy'
 import './styles/App.css'
 
 /**
@@ -15,12 +18,19 @@ import './styles/App.css'
  * - "/terms" - Terms & Conditions page for the CalcEat app
  * - "/delete-account" - Account deletion guidance page for users
  * - "/support" - Support and contact information page for users
+ * - "/accessibility" - Accessibility statement page for the CalcEat app
  * 
  * Uses React Router for clean URL navigation and better SEO
  */
 function App() {
   return (
     <Router>
+      {/* Skip to content link for accessibility */}
+      <a href="#main" className="skip-link">
+        Skip to main content
+      </a>
+      {/* Cookie consent banner */}
+      <CookieBanner />
       <div className="App">
         <Routes>
           {/* Main landing page route */}
@@ -37,6 +47,12 @@ function App() {
           
           {/* Support page route */}
           <Route path="/support" element={<Support />} />
+
+          {/* Cookie policy page route */}
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
+
+          {/* Accessibility statement page route */}
+          <Route path="/accessibility" element={<AccessibilityStatement />} />
         </Routes>
       </div>
     </Router>

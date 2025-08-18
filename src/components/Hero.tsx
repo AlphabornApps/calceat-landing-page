@@ -10,11 +10,11 @@ import '../styles/Hero.css'
  */
 const Hero: React.FC = () => {
   return (
-    <section className="hero section">
+    <section className="hero section" aria-labelledby="hero-title">
       <div className="container">
         <div className="hero-content">
           {/* Main headline - clear and compelling value proposition */}
-          <h1 className="hero-title">
+          <h1 id="hero-title" className="hero-title">
             Calculate Your Nutrition
             <span className="highlight"> Made Simple</span>
           </h1>
@@ -26,11 +26,11 @@ const Hero: React.FC = () => {
           </p>
           
           {/* Call-to-action buttons - primary and secondary actions */}
-          <div className="hero-actions">
-            <button className="btn btn-primary">
+          <div className="hero-actions" role="group" aria-label="Call to action buttons">
+            <button className="btn btn-primary" aria-label="Start tracking nutrition for free">
               Start Tracking Free
             </button>
-            <button className="btn btn-secondary">
+            <button className="btn btn-secondary" aria-label="Learn more about Calceat features">
               Learn More
             </button>
           </div>

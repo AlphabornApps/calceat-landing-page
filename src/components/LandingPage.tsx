@@ -15,11 +15,13 @@ import Footer from './Footer'
 function LandingPage() {
   return (
     <div className="landing-page">
-      {/* Hero section - main value proposition and call-to-action */}
-      <Hero />
-      
-      {/* Features section - showcase key benefits and features */}
-      <Features />
+      <main id="main" tabIndex={-1}>
+        {/* Hero section - main value proposition and call-to-action */}
+        <Hero />
+        
+        {/* Features section - showcase key benefits and features */}
+        <Features />
+      </main>
       
       {/* Footer - contact info and links */}
       <Footer />

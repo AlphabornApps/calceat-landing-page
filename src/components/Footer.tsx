@@ -2,6 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Footer.css'
 
+function handleCookieSettings(e: React.MouseEvent) {
+  e.preventDefault()
+  localStorage.removeItem('cookie_consent')
+  // refresh to show banner again
+  window.location.reload()
+}
+
 /**
  * Footer component - Contact information and links
  * 
@@ -39,6 +46,9 @@ const Footer: React.FC = () => {
               <li><Link to="/privacy">Privacy Policy</Link></li>
               <li><Link to="/terms">Terms of Service</Link></li>
               <li><Link to="/delete-account">Delete Account</Link></li>
+              <li><Link to="/accessibility">Accessibility</Link></li>
+              <li><Link to="/cookie-policy">Cookie Policy</Link></li>
+              <li><a href="#" onClick={handleCookieSettings}>Cookie Settings</a></li>
             </ul>
           </div>
           

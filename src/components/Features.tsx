@@ -63,9 +63,9 @@ const Features: React.FC = () => {
         </div>
         
         {/* Features grid */}
-        <div className="features-grid">
+        <div className="features-grid" role="list" aria-label="Key features of Calceat nutrition app">
           {features.map((feature) => (
-            <div key={feature.id} className="feature-card">
+            <div key={feature.id} className="feature-card" role="listitem">
               <div className="feature-icon">
                 {feature.icon}
               </div>
