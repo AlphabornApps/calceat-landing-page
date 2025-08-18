@@ -3,6 +3,7 @@ import LandingPage from './components/LandingPage'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsConditions from './components/TermsConditions'
 import DeleteAccount from './components/DeleteAccount'
+import Support from './components/Support'
 import './styles/App.css'
 
 /**
@@ -13,6 +14,7 @@ import './styles/App.css'
  * - "/privacy" - Privacy policy page for the CalcEat app
  * - "/terms" - Terms & Conditions page for the CalcEat app
  * - "/delete-account" - Account deletion guidance page for users
+ * - "/support" - Support and contact information page for users
  * 
  * Uses React Router for clean URL navigation and better SEO
  */
@@ -32,6 +34,9 @@ function App() {
           
           {/* Delete account guidance page route */}
           <Route path="/delete-account" element={<DeleteAccount />} />
+          
+          {/* Support page route */}
+          <Route path="/support" element={<Support />} />
         </Routes>
       </div>
     </Router>

@@ -47,6 +47,7 @@ const Footer: React.FC = () => {
             <h4 className="footer-heading">Contact</h4>
             <ul className="footer-links">
               <li><a href="mailto:alphabornapps@gmail.com">alphabornapps@gmail.com</a></li>
+              <li><Link to="/support">Support</Link></li>
             </ul>
           </div>
         </div>
