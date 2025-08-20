@@ -51,7 +51,7 @@ function TermsConditions() {
         <br />
         <strong>Subscriptions and Payments</strong>
         <p>
-          Some features of the Application are available through auto-renewable subscriptions. A subscription will automatically renew unless it is canceled at least 24 hours before the end of the current period. Your Apple ID account will be charged for renewal within the 24-hour period prior to the end of the current period. You can manage and cancel your subscriptions at any time by going to your App Store account settings after purchase. All payments are processed by Apple and are subject to Apple’s terms and conditions.
+          Some features of the Application are available through auto-renewable subscriptions. A subscription automatically renews unless it is canceled at least 24 hours before the end of the current period. The renewal charge will be applied to your Apple ID or Google Play account within the 24-hour period prior to the end of the current period. You can manage and cancel your subscriptions at any time by going to your App Store or Google Play account settings after purchase. All payments are processed by Apple or Google and are therefore subject to the respective App Store or Google Play terms and conditions.
         </p>
         
         <br />
