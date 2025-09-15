@@ -1,10 +1,9 @@
-/* Hero section styles */
+/* Modern minimalist hero section inspired by Cal AI */
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--background);
   text-align: center;
   padding: 6rem 0;
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
 }
@@ -12,34 +11,137 @@
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 800;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
 }
 
-.highlight {
-  color: #fbbf24;
+.hero-brand {
+  font-weight: 800;
+  display: inline-block;
 }
 
 .hero-description {
-  font-size: 1.25rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.9;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: var(--text-secondary);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .hero-actions {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   flex-wrap: wrap;
+}
+
+.download-btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 180px;
+}
+
+/* App mockup preview */
+.hero-preview {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.app-mockup {
+  width: 280px;
+  height: 560px;
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  border-radius: 2.5rem;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.mockup-screen {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background: var(--background);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.mockup-content {
+  padding: 2rem 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mockup-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mockup-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mockup-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.mockup-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup-card {
+  background: var(--background-secondary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.mockup-image {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.mockup-food {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.mockup-calories {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
 
 .hero-stats {
@@ -47,50 +149,126 @@
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
-  margin-top: 3rem;
 }
 
 .stat {
   text-align: center;
+  background: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-large);
+  padding: 1.5rem 2rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #667eea;
 }
 
 .stat-number {
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  color: #fbbf24;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .stat-label {
   font-size: 0.9rem;
-  opacity: 0.8;
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
-  .hero {
-    padding: 4rem 0;
-    text-align: center;
-  }
-  
+@media (max-width: 1024px) {
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
-  
+
   .hero-description {
     font-size: 1.1rem;
   }
-  
+
+  .app-mockup {
+    width: 240px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0;
+    min-height: 80vh;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
+    gap: 0.75rem;
   }
-  
+
+  .download-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .app-mockup {
+    width: 200px;
+    height: 400px;
+  }
+
+  .mockup-content {
+    padding: 1.5rem 1rem;
+  }
+
   .hero-stats {
-    gap: 2rem;
+    gap: 1.5rem;
   }
-  
+
+  .stat {
+    padding: 1rem 1.5rem;
+    min-width: 100px;
+  }
+
   .stat-number {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .app-mockup {
+    width: 180px;
+    height: 360px;
+  }
+
+  .mockup-title {
+    font-size: 1.2rem;
+  }
+
+  .mockup-card {
+    padding: 1rem;
   }
 }

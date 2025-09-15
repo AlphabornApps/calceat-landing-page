@@ -2,52 +2,78 @@ import React from 'react'
 import '../styles/Hero.css'
 
 /**
- * Hero component - The main landing section with value proposition
- * 
- * This component presents the primary value proposition of Calceat,
- * including a compelling headline, description, and call-to-action buttons.
- * It's designed to capture visitors' attention and drive conversions.
+ * Hero component - Modern minimalist hero section inspired by Cal AI
+ *
+ * Clean, centered design with large typography, gradient text effects,
+ * and prominent app store download buttons.
  */
 const Hero: React.FC = () => {
   return (
-    <section className="hero section" aria-labelledby="hero-title">
+    <section className="hero" aria-labelledby="hero-title">
       <div className="container">
         <div className="hero-content">
-          {/* Main headline - clear and compelling value proposition */}
-          <h1 id="hero-title" className="hero-title">
-            Calculate Your Nutrition
-            <span className="highlight"> Made Simple</span>
+          {/* Main headline with gradient text */}
+          <h1 id="hero-title" className="hero-title animate-fade-in-up">
+            Meet{' '}
+            <span className="hero-brand text-gradient font-display">
+              CalcEat
+            </span>
           </h1>
-          
-          {/* Supporting description - explains the main benefit */}
-          <p className="hero-description">
-            Track your daily nutrition intake, calculate calories, and reach your health goals 
-            with our intuitive nutrition calculator. Make informed food choices effortlessly.
+
+          {/* Supporting description */}
+          <p className="hero-description animate-fade-in-up animate-delay-200">
+            Your AI-powered nutrition companion that transforms how you track food.
+            Simply snap a photo and get instant nutritional insights with cutting-edge
+            computer vision technology.
           </p>
-          
-          {/* Call-to-action buttons - primary and secondary actions */}
-          <div className="hero-actions" role="group" aria-label="Call to action buttons">
-            <button className="btn btn-primary" aria-label="Start tracking nutrition for free">
-              Start Tracking Free
+
+          {/* App Store buttons */}
+          <div className="hero-actions animate-fade-in-up animate-delay-300" role="group" aria-label="Download app">
+            <button className="btn btn-primary download-btn" aria-label="Download CalcEat from App Store">
+              <span className="btn-icon">📱</span>
+              Download for iOS
             </button>
-            <button className="btn btn-secondary" aria-label="Learn more about Calceat features">
+            <button className="btn btn-secondary download-btn" aria-label="Learn more about CalcEat">
               Learn More
             </button>
           </div>
-          
-          {/* Trust indicators - build credibility */}
-          <div className="hero-stats">
+
+          {/* App preview or hero image placeholder */}
+          <div className="hero-preview animate-fade-in-up animate-delay-400">
+            <div className="app-mockup">
+              <div className="mockup-screen">
+                <div className="mockup-content">
+                  <div className="mockup-header">
+                    <div className="mockup-title">CalcEat</div>
+                    <div className="mockup-subtitle">AI Food Recognition</div>
+                  </div>
+                  <div className="mockup-body">
+                    <div className="mockup-card">
+                      <div className="mockup-image">📸</div>
+                      <div className="mockup-text">
+                        <div className="mockup-food">Grilled Chicken Salad</div>
+                        <div className="mockup-calories">420 calories</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Trust indicators */}
+          <div className="hero-stats animate-fade-in-up animate-delay-500">
             <div className="stat">
               <span className="stat-number">10K+</span>
-              <span className="stat-label">Happy Users</span>
+              <span className="stat-label">Users</span>
             </div>
             <div className="stat">
               <span className="stat-number">500K+</span>
               <span className="stat-label">Meals Tracked</span>
             </div>
             <div className="stat">
-              <span className="stat-number">99%</span>
-              <span className="stat-label">Satisfaction Rate</span>
+              <span className="stat-number">4.9</span>
+              <span className="stat-label">App Store Rating</span>
             </div>
           </div>
         </div>
