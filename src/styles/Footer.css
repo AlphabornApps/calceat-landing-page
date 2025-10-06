@@ -21,6 +21,16 @@
   line-height: 1.2;
 }
 
+.footer-cta-title .brand-text {
+  font-size: inherit;
+  display: inline;
+}
+
+.footer-cta-title .brand-calc,
+.footer-cta-title .brand-eat {
+  font-size: inherit;
+}
+
 .footer-cta-description {
   font-size: 1.1rem;
   color: var(--text-secondary);
@@ -97,11 +107,26 @@
 .footer-brand {
   display: flex;
   align-items: center;
+  gap: 0.625rem;
 }
 
-.brand-name {
-  font-size: 1.5rem;
-  font-weight: 700;
+.footer-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.footer-brand .brand-text {
+  font-size: 1.25rem;
+}
+
+.brand-calc {
+  color: var(--text-primary);
+}
+
+.brand-eat {
+  color: var(--primary-color);
 }
 
 .copyright {

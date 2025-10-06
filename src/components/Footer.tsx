@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Footer.css'
+import calceatIcon from '../assets/icons/calceat-icon.png'
 
 function handleCookieSettings(e: React.MouseEvent) {
   e.preventDefault()
@@ -25,7 +26,10 @@ const Footer: React.FC = () => {
         <div className="footer-cta animate-fade-in-up">
           <h3 className="footer-cta-title font-display">
             Start your nutrition journey with{' '}
-            <span className="text-gradient">CalcEat</span>
+            <span className="brand-text">
+              <span className="brand-calc">Calc</span>
+              <span className="brand-eat">Eat</span>
+            </span>
           </h3>
           <p className="footer-cta-description">
             Download now and experience the future of AI-powered nutrition tracking.
@@ -75,7 +79,11 @@ const Footer: React.FC = () => {
         {/* Footer bottom */}
         <div className="footer-bottom">
           <div className="footer-brand">
-            <span className="brand-name font-display text-gradient">CalcEat</span>
+            <img src={calceatIcon} alt="CalcEat" className="footer-logo" />
+            <span className="brand-text font-display">
+              <span className="brand-calc">Calc</span>
+              <span className="brand-eat">Eat</span>
+            </span>
           </div>
           <p className="copyright">
             © {currentYear} CalcEat. All rights reserved.
