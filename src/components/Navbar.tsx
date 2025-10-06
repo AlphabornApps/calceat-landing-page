@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
         </a>
 
         <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Primary">
-          <a href="#features" onClick={scrollToId('features')}>Features</a>
+          <a href="#how-it-works" onClick={scrollToId('how-it-works')}>How It Works</a>
           <a href="#testimonials" onClick={scrollToId('testimonials')}>Testimonials</a>
           <Link to="/support">Support</Link>
         </nav>
