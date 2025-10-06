@@ -41,6 +41,13 @@
   margin-bottom: 1.5rem;
   font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
   letter-spacing: -0.02em;
+  border: none;
+  padding-bottom: 0;
+}
+
+.section-title::before,
+.section-title::after {
+  display: none;
 }
 
 .section-description {
