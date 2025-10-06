@@ -2,7 +2,6 @@ import Navbar from './Navbar'
 import TrustBar from './TrustBar'
 import Hero from './Hero'
 import HowItWorks from './HowItWorks'
-import Features from './Features'
 import Testimonials from './Testimonials'
 import Integrations from './Integrations'
 import CTA from './CTA'
@@ -29,11 +28,6 @@ function LandingPage() {
 
         {/* How It Works - step-by-step process */}
         <HowItWorks />
-
-        {/* Features section - showcase key benefits and features */}
-        <div id="features">
-          <Features />
-        </div>
 
         {/* Testimonials */}
         <Testimonials />

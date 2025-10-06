@@ -19,8 +19,9 @@ body {
 
 /* Modern CSS variables for consistent theming */
 :root {
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --text-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --primary-color: #5AB2FF;
+  --primary-gradient: linear-gradient(135deg, #5AB2FF 0%, #3D9FE8 100%);
+  --text-gradient: linear-gradient(135deg, #5AB2FF 0%, #3D9FE8 100%);
   --text-primary: #1a1a1a;
   --text-secondary: #6b7280;
   --text-muted: #9ca3af;
@@ -144,24 +145,16 @@ body {
   font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
 }
 
-/* Animation utilities */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(2rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Simplified animations - no spinning or complex motion */
 .animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out both;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.animate-delay-100 { animation-delay: 0.1s; }
-.animate-delay-200 { animation-delay: 0.2s; }
-.animate-delay-300 { animation-delay: 0.3s; }
-.animate-delay-400 { animation-delay: 0.4s; }
-.animate-delay-500 { animation-delay: 0.5s; }
+.animate-delay-100,
+.animate-delay-200,
+.animate-delay-300,
+.animate-delay-400,
+.animate-delay-500 {
+  /* No delays */
+}

@@ -29,9 +29,8 @@
 .badge-dot {
   width: 8px;
   height: 8px;
-  background: #667eea;
+  background: var(--primary-color);
   border-radius: 50%;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .section-title {
@@ -138,19 +137,19 @@
 }
 
 .gradient-1 {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--primary-gradient);
 }
 
 .gradient-2 {
-  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  background: linear-gradient(135deg, #5AB2FF 0%, #3D9FE8 100%);
 }
 
 .gradient-3 {
-  background: linear-gradient(135deg, #ec4899 0%, #ef4444 100%);
+  background: linear-gradient(135deg, #3D9FE8 0%, #2E7CC4 100%);
 }
 
 .gradient-4 {
-  background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+  background: linear-gradient(135deg, #5AB2FF 0%, #2E7CC4 100%);
 }
 
 /* Step Content */

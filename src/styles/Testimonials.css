@@ -29,18 +29,8 @@
 .badge-dot {
   width: 8px;
   height: 8px;
-  background: #667eea;
+  background: var(--primary-color);
   border-radius: 50%;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
 }
 
 .section-title {
@@ -54,7 +44,7 @@
 }
 
 .title-highlight {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,8 +79,8 @@
 
 .testimonial-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(102, 126, 234, 0.3);
-  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.08);
+  border-color: rgba(90, 178, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(90, 178, 255, 0.08);
 }
 
 .testimonial-card:hover .card-decoration {
@@ -104,7 +94,7 @@
   right: 0;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle at top right, rgba(102, 126, 234, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle at top right, rgba(90, 178, 255, 0.05) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -122,7 +112,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(90, 178, 255, 0.1) 0%, rgba(61, 159, 232, 0.1) 100%);
   border: 2px solid var(--border-color);
   display: flex;
   align-items: center;
