@@ -1,5 +1,11 @@
+import Navbar from './Navbar'
+import TrustBar from './TrustBar'
 import Hero from './Hero'
+import HowItWorks from './HowItWorks'
 import Features from './Features'
+import Testimonials from './Testimonials'
+import Integrations from './Integrations'
+import CTA from './CTA'
 import Footer from './Footer'
 
 /**
@@ -15,12 +21,28 @@ import Footer from './Footer'
 function LandingPage() {
   return (
     <div className="landing-page">
+      <Navbar />
+      <TrustBar />
       <main id="main" tabIndex={-1}>
         {/* Hero section - main value proposition and call-to-action */}
         <Hero />
-        
+
+        {/* How It Works - step-by-step process */}
+        <HowItWorks />
+
         {/* Features section - showcase key benefits and features */}
-        <Features />
+        <div id="features">
+          <Features />
+        </div>
+
+        {/* Testimonials */}
+        <Testimonials />
+
+        {/* Integrations */}
+        <Integrations />
+
+        {/* CTA Banner */}
+        <CTA />
       </main>
       
       {/* Footer - contact info and links */}

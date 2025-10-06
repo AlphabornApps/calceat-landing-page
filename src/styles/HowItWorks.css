@@ -1,0 +1,280 @@
+/* How It Works Section */
+.how-it-works {
+  background: var(--background-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--background);
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #667eea;
+  border-radius: 50%;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.section-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Steps Grid */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+.step-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Step Visual - Phone Mockup */
+.step-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.step-phone {
+  width: 180px;
+  height: 360px;
+  background: #1f2937;
+  border-radius: 30px;
+  padding: 8px;
+  box-shadow:
+    0 0 0 2px #374151,
+    0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.step-phone-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.step-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8edff 100%);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.step-icon {
+  font-size: 3rem;
+  opacity: 0.7;
+}
+
+.step-placeholder-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Step Number Badge */
+.step-number {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 4px solid var(--background-secondary);
+}
+
+.gradient-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-2 {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+}
+
+.gradient-3 {
+  background: linear-gradient(135deg, #ec4899 0%, #ef4444 100%);
+}
+
+.gradient-4 {
+  background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+}
+
+/* Step Content */
+.step-content {
+  text-align: center;
+}
+
+.step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+}
+
+.step-description {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Connector Arrow */
+.step-connector {
+  position: absolute;
+  top: 180px;
+  right: -2rem;
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+.connector-arrow {
+  width: 32px;
+  height: 32px;
+  color: var(--text-muted);
+  opacity: 0.3;
+}
+
+/* CTA */
+.how-it-works-cta {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 3rem 2rem;
+  background: var(--background);
+  border-radius: var(--border-radius-large);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+  }
+
+  .step-connector {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .how-it-works {
+    padding: 4rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .step-phone {
+    width: 160px;
+    height: 320px;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.125rem;
+  }
+
+  .step-title {
+    font-size: 1.125rem;
+  }
+
+  .step-description {
+    font-size: 0.875rem;
+  }
+
+  .how-it-works-cta {
+    margin-top: 3rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .cta-text {
+    font-size: 1.125rem;
+  }
+
+  .btn-large {
+    width: 100%;
+  }
+}
