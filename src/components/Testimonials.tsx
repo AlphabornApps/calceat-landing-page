@@ -63,10 +63,6 @@ const Testimonials: React.FC = () => {
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
-          <div className="section-badge animate-fade-in-up">
-            <span className="badge-dot"></span>
-            <span>Testimonials</span>
-          </div>
           <h2 id="testimonials-title" className="section-title animate-fade-in-up animate-delay-100">
             Loved by <span className="title-highlight">Thousands</span>
           </h2>

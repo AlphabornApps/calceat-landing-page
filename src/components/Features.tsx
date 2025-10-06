@@ -51,10 +51,6 @@ const Features: React.FC = () => {
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
-          <div className="section-badge animate-fade-in-up">
-            <span className="badge-dot"></span>
-            <span>Features</span>
-          </div>
           <h2 className="section-title animate-fade-in-up animate-delay-100">
             Everything You Need to
             <span className="title-highlight"> Succeed</span>

@@ -13,11 +13,6 @@ const Hero: React.FC = () => {
         <div className="hero-grid">
           {/* Left side - Content */}
           <div className="hero-content">
-            <div className="hero-badge animate-fade-in-up">
-              <span className="badge-pulse"></span>
-              <span>AI-Powered Nutrition</span>
-            </div>
-
             <h1 id="hero-title" className="hero-title animate-fade-in-up animate-delay-100">
               Track Your Nutrition
               <span className="hero-highlight"> Effortlessly</span>

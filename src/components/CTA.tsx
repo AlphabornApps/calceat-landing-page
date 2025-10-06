@@ -13,11 +13,6 @@ const CTA: React.FC = () => {
         <div className="cta-wrapper">
           {/* Content */}
           <div className="cta-content">
-            <div className="cta-badge animate-fade-in-up">
-              <span className="badge-pulse"></span>
-              <span>Get Started Today</span>
-            </div>
-
             <h2 id="cta-title" className="cta-title animate-fade-in-up animate-delay-100">
               Ready to Transform Your
               <span className="cta-highlight"> Nutrition Journey?</span>
