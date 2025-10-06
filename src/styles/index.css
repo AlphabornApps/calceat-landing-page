@@ -88,6 +88,7 @@ body {
   position: relative;
   overflow: hidden;
   font-family: 'Inter', sans-serif;
+  min-width: 240px;
 }
 
 .btn::before {
@@ -124,7 +125,7 @@ body {
 }
 
 .btn-secondary:hover {
-  border-color: #667eea;
+  border-color: var(--primary-color);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
