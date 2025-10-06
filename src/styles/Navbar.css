@@ -45,9 +45,17 @@
 
 .brand-text {
   font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+}
+
+.brand-calc {
+  color: var(--text-primary);
+}
+
+.brand-eat {
+  color: var(--primary-color);
 }
 
 .nav-links {

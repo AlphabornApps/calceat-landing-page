@@ -44,7 +44,10 @@ const Navbar: React.FC = () => {
       <div className="container navbar-inner">
         <a href="#main" className="navbar-brand" onClick={scrollToId('main')} aria-label="Go to top">
           <img src={calceatIcon} alt="CalcEat" className="brand-logo" />
-          <span className="brand-text font-display text-gradient">CalcEat</span>
+          <span className="brand-text font-display">
+            <span className="brand-calc">Calc</span>
+            <span className="brand-eat">Eat</span>
+          </span>
         </a>
 
         <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Primary">
