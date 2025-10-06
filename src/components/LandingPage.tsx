@@ -1,5 +1,4 @@
 import Navbar from './Navbar'
-import TrustBar from './TrustBar'
 import Hero from './Hero'
 import HowItWorks from './HowItWorks'
 import Testimonials from './Testimonials'
@@ -21,7 +20,6 @@ function LandingPage() {
   return (
     <div className="landing-page">
       <Navbar />
-      <TrustBar />
       <main id="main" tabIndex={-1}>
         {/* Hero section - main value proposition and call-to-action */}
         <Hero />
