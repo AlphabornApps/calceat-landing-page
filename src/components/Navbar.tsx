@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css'
+import calceatIcon from '../assets/icons/calceat-icon.png'
 
 function useTheme() {
   const [theme, setTheme] = React.useState<string>(() => {
@@ -42,7 +43,7 @@ const Navbar: React.FC = () => {
     <header className="navbar" role="banner">
       <div className="container navbar-inner">
         <a href="#main" className="navbar-brand" onClick={scrollToId('main')} aria-label="Go to top">
-          <span className="brand-logo">🍽️</span>
+          <img src={calceatIcon} alt="CalcEat" className="brand-logo" />
           <span className="brand-text font-display text-gradient">CalcEat</span>
         </a>
 
