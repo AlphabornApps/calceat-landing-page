@@ -51,11 +51,13 @@ const Navbar: React.FC = () => {
           <a href="#features" onClick={scrollToId('features')}>Features</a>
           <a href="#testimonials" onClick={scrollToId('testimonials')}>Testimonials</a>
           <a href="#integrations" onClick={scrollToId('integrations')}>Integrations</a>
-          <a href="#download" onClick={scrollToId('download')} className="nav-cta">Download</a>
           <Link to="/support">Support</Link>
         </nav>
 
         <div className="nav-actions">
+          <a href="#download" onClick={scrollToId('download')} className="download-btn">
+            Download
+          </a>
           <button className="theme-toggle" onClick={toggleTheme} aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>
             {theme === 'light' ? '🌙' : '☀️'}
           </button>
