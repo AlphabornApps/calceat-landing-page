@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
         </nav>
 
         <div className="nav-actions">
-          <a href="https://apps.apple.com/app/calceat/id6749812271" target="_blank" rel="noopener noreferrer" className="download-btn">
+          <a href="#footer-download" onClick={scrollToId('footer-download')} className="download-btn">
             Download
           </a>
           <button className="theme-toggle" onClick={toggleTheme} aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>

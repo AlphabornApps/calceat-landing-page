@@ -67,7 +67,8 @@ body {
 #features,
 #testimonials,
 #integrations,
-#download {
+#download,
+#footer-download {
   scroll-margin-top: 90px;
 }
 

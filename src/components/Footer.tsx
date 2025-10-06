@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="container">
         {/* Call to action section */}
-        <div className="footer-cta animate-fade-in-up">
+        <div id="footer-download" className="footer-cta animate-fade-in-up">
           <h3 className="footer-cta-title font-display">
             Start your nutrition journey with{' '}
             <span className="brand-text">
