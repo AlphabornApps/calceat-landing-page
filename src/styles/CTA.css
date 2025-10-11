@@ -155,13 +155,13 @@
 
 .cta-phone-notch {
   position: absolute;
-  top: 16px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 28px;
+  width: 85px;
+  height: 24px;
   background: #1f2937;
-  border-radius: 0 0 20px 20px;
+  border-radius: 16px;
   z-index: 10;
 }
 
@@ -204,6 +204,13 @@
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+}
+
+.cta-app-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Floating Badges */

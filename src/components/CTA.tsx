@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/CTA.css'
+import appScreenshot from '../assets/images/ready-to-transform.png'
 
 /**
  * CTA component - Final compelling call-to-action
@@ -45,11 +46,11 @@ const CTA: React.FC = () => {
               <div className="cta-phone-frame">
                 <div className="cta-phone-notch"></div>
                 <div className="cta-phone-screen">
-                  <div className="cta-screen-placeholder">
-                    <div className="cta-placeholder-icon">📱</div>
-                    <p className="cta-placeholder-text">App Screenshot</p>
-                    <p className="cta-placeholder-hint">Portrait iPhone image</p>
-                  </div>
+                  <img
+                    src={appScreenshot}
+                    alt="CalcEat app screenshot showing food logging interface"
+                    className="cta-app-screenshot"
+                  />
                 </div>
               </div>
 
