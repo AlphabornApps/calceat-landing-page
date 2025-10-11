@@ -1,6 +1,6 @@
 /* CTA Section - Final Call to Action */
 .cta {
-  background: var(--background);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }

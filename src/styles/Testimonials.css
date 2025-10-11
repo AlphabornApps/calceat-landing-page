@@ -1,6 +1,6 @@
 /* Testimonials Section */
 .testimonials {
-  background: var(--background-secondary);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }

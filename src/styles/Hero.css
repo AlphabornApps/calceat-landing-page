@@ -6,7 +6,7 @@
   align-items: center;
   padding: 8rem 0 6rem;
   overflow: hidden;
-  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+  background: #ffffff;
 }
 
 .hero-bg-decoration {
@@ -15,7 +15,7 @@
   right: -10%;
   width: 60%;
   height: 120%;
-  background: radial-gradient(circle at 50% 50%, rgba(90, 178, 255, 0.08) 0%, transparent 70%);
+  background: #ffffff;
   pointer-events: none;
   z-index: 0;
 }
@@ -177,6 +177,14 @@
   justify-content: center;
   align-items: center;
   height: 700px;
+}
+
+.hero-screenshot {
+  max-width: 500px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .phone-mockup {

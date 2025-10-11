@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Hero.css'
+import heroImage from '../assets/images/hero.png'
 
 /**
  * Hero component - Premium modern hero section
@@ -56,38 +57,13 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right side - iPhone mockup with image placeholder */}
+          {/* Right side - App screenshot */}
           <div className="hero-visual animate-fade-in-up animate-delay-300">
-            <div className="phone-mockup">
-              <div className="phone-frame">
-                <div className="phone-notch"></div>
-                <div className="phone-screen">
-                  {/* Placeholder for app screenshot */}
-                  <div className="screen-placeholder">
-                    <div className="placeholder-icon">📱</div>
-                    <p className="placeholder-text">App Screenshot Placeholder</p>
-                    <p className="placeholder-hint">Portrait iPhone image</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating stats cards */}
-              <div className="floating-card card-1 animate-float">
-                <div className="card-icon">📸</div>
-                <div className="card-content">
-                  <div className="card-label">AI Recognition</div>
-                  <div className="card-value">99.2% Accurate</div>
-                </div>
-              </div>
-
-              <div className="floating-card card-2 animate-float-delayed">
-                <div className="card-icon">⚡</div>
-                <div className="card-content">
-                  <div className="card-label">Processing Speed</div>
-                  <div className="card-value">&lt;2 seconds</div>
-                </div>
-              </div>
-            </div>
+            <img
+              src={heroImage}
+              alt="CalcEat app showing meal tracking and nutrition insights"
+              className="hero-screenshot"
+            />
           </div>
         </div>
       </div>
