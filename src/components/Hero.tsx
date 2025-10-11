@@ -20,8 +20,7 @@ const Hero: React.FC = () => {
             </h1>
 
             <p className="hero-description animate-fade-in-up animate-delay-200">
-              Snap a photo of your meal and let AI do the rest. Get instant nutritional
-              insights, track your goals, and achieve a healthier lifestyle—all in seconds.
+              Snap a photo of your meal or simply type and let our powerful AI do the rest. Get instant nutritional insights, track your goals, and achieve a healthier lifestyle, all in seconds.
             </p>
 
             <div className="hero-actions animate-fade-in-up animate-delay-300">
