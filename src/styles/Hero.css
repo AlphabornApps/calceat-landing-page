@@ -88,6 +88,95 @@
   margin-bottom: 3rem;
 }
 
+/* Download Buttons */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Inter', sans-serif;
+  border: 2px solid;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.download-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.download-btn:hover::before {
+  left: 100%;
+}
+
+.download-btn-ios {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  border-color: #333333;
+  color: white;
+}
+
+.download-btn-ios:hover {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-color: #4a4a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn-android {
+  background: white;
+  border-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.download-btn-android:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.download-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.download-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.download-label {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.download-store {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 .btn-large {
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -394,6 +483,11 @@
 
   .btn-large {
     width: 100%;
+  }
+
+  .download-btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-social-proof {
