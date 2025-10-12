@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
+import Footer from './Footer'
 import '../styles/Support.css'
 
 /**
  * Support component - Contact and help information
- * 
+ *
  * This component provides users with contact information and guidance
  * on how to get help with the CalcEat app. It includes the contact email
  * and links back to the main landing page.
@@ -12,105 +14,95 @@ import '../styles/Support.css'
 const Support: React.FC = () => {
   return (
     <div className="support-page">
-      <div className="container">
-        {/* Header section */}
-        <div className="support-header">
-          <div className="header-icon">🆘</div>
-          <h1 className="support-title">Need Help?</h1>
-          <p className="support-subtitle">
-            We're here to help you get the most out of CalcEat
-          </p>
-          <div className="header-decoration">
-            <span className="decoration-line"></span>
-            <span className="decoration-dot">●</span>
-            <span className="decoration-line"></span>
-          </div>
-        </div>
+      <Navbar />
 
-        {/* Main support content */}
-        <div className="support-content">
-          {/* Contact section */}
-          <div className="support-section">
-            <h2 className="section-title">Contact Us</h2>
-            <p className="section-description">
-              If you have any questions, need technical support, or want to provide feedback, 
-              please don't hesitate to reach out to our team.
+      <main className="support-main">
+        <div className="container">
+          {/* Header section */}
+          <div className="support-header">
+            <div className="support-badge">
+              <span>Support</span>
+            </div>
+            <h1 className="support-title">
+              Get Support for <span className="text-gradient">CalcEat</span>
+            </h1>
+            <p className="support-subtitle">
+              Have questions or need assistance? We're here to help you get the most out of your nutrition tracking experience.
             </p>
-            
-            <div className="contact-info">
-              <div className="contact-item">
-                <span className="contact-icon">📧</span>
-                <div className="contact-details">
-                  <h3>Email Support</h3>
-                  <p>Send us an email and we'll get back to you as soon as possible.</p>
-                  <a 
-                    href="mailto:alphabornapps@gmail.com" 
-                    className="contact-email"
-                  >
-                    alphabornapps@gmail.com
-                  </a>
-                </div>
+          </div>
+
+          {/* Main support content */}
+          <div className="support-content">
+            {/* Contact section */}
+            <div className="support-section contact-section">
+              <h2 className="section-title">Contact Our Team</h2>
+              <p className="section-description">
+                Send us an email and we'll get back to you as soon as possible. We typically respond within 24-48 hours during business days.
+              </p>
+
+              <div className="contact-card">
+                <a
+                  href="mailto:alphabornapps@gmail.com"
+                  className="contact-email-link"
+                >
+                  alphabornapps@gmail.com
+                </a>
+                <p className="contact-hint">Click to send us an email</p>
               </div>
             </div>
-          </div>
 
-          {/* Common questions section */}
-          <div className="support-section">
-            <h2 className="section-title">Common Questions</h2>
-            <div className="faq-list">
-              <div className="faq-item">
-                <div className="faq-icon">🚀</div>
-                <div className="faq-content">
-                  <h3>How do I get started with CalcEat?</h3>
+            {/* Common questions section */}
+            <div className="support-section">
+              <h2 className="section-title">Frequently Asked Questions</h2>
+
+              <div className="faq-list">
+                <div className="faq-item">
+                  <div className="faq-header">
+                    <h3>How do I get started with CalcEat?</h3>
+                  </div>
                   <p>
-                    Download the app from the App Store or Google Play Store, create an account, 
+                    Download the app from the App Store or Google Play Store, create an account,
                     and start tracking your meals. The app will guide you through the setup process.
                   </p>
                 </div>
-              </div>
-              
-              <div className="faq-item">
-                <div className="faq-icon">🤖</div>
-                <div className="faq-content">
-                  <h3>How does the AI nutrition analysis work?</h3>
+
+                <div className="faq-item">
+                  <div className="faq-header">
+                    <h3>How does the AI nutrition analysis work?</h3>
+                  </div>
                   <p>
-                    Simply take a photo of your meal or describe what you ate. Our AI will analyze 
+                    Simply take a photo of your meal or describe what you ate. Our AI will analyze
                     the content and provide detailed nutritional information automatically.
                   </p>
                 </div>
-              </div>
-              
-              <div className="faq-item">
-                <div className="faq-icon">🗑️</div>
-                <div className="faq-content">
-                  <h3>Can I delete my account?</h3>
+
+                <div className="faq-item">
+                  <div className="faq-header">
+                    <h3>Is my data secure and private?</h3>
+                  </div>
+                  <p>
+                    Yes, we take data security seriously. All your personal information and nutrition data
+                    is encrypted and stored securely. Check our Privacy Policy for more details.
+                  </p>
+                </div>
+
+                <div className="faq-item">
+                  <div className="faq-header">
+                    <h3>Can I delete my account?</h3>
+                  </div>
                   <p>
                     Yes, you can delete your account at any time. Visit our{' '}
-                    <Link to="/delete-account" className="link">Delete Account</Link> page 
-                    for detailed instructions.
+                    <Link to="/delete-account" className="faq-link">Delete Account</Link> page
+                    for detailed instructions on how to permanently remove your data.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Response time section */}
-          <div className="support-section">
-            <h2 className="section-title">Response Time</h2>
-            <p className="section-description">
-              We typically respond to support requests within 24-48 hours during business days. 
-              For urgent technical issues, please include "URGENT" in your email subject line.
-            </p>
-          </div>
         </div>
+      </main>
 
-        {/* Back to home section */}
-        <div className="back-home">
-          <Link to="/" className="btn btn-secondary">
-            ← Back to Home
-          </Link>
-        </div>
-      </div>
+      <Footer />
     </div>
   )
 }
