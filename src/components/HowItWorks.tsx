@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/HowItWorks.css'
 import snapAPhotoImage from '../assets/images/snap-a-photo.png'
+import aiAnalysisImage from '../assets/images/ai-analysis.png'
 
 /**
  * How It Works component - Step-by-step process showcase
@@ -63,11 +64,24 @@ const HowItWorks: React.FC = () => {
               {/* Card with iPhone placeholder */}
               <div className="step-visual">
                 {index === 0 ? (
-                  // First step: Use actual image
+                  // First step: Snap a Photo
                   <>
                     <img
                       src={snapAPhotoImage}
                       alt="Snap a photo of your meal"
+                      className="step-phone-image"
+                    />
+                    {/* Step number badge */}
+                    <div className={`step-number gradient-${index + 1}`}>
+                      {step.number}
+                    </div>
+                  </>
+                ) : index === 1 ? (
+                  // Second step: AI Analysis
+                  <>
+                    <img
+                      src={aiAnalysisImage}
+                      alt="AI analyzing your meal"
                       className="step-phone-image"
                     />
                     {/* Step number badge */}
