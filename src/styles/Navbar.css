@@ -121,10 +121,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
 }
 
 .theme-toggle:hover {
   background: var(--background-secondary);
+}
+
+.theme-toggle:focus {
+  outline: none;
 }
 
 .menu-toggle {
