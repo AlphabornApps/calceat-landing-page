@@ -478,7 +478,7 @@
 
   .hero-actions {
     flex-direction: column;
-    width: 100%;
+    align-items: center;
   }
 
   .btn-large {
@@ -486,7 +486,8 @@
   }
 
   .download-btn {
-    width: 100%;
+    width: auto;
+    min-width: 280px;
     justify-content: center;
   }
 

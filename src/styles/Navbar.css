@@ -87,7 +87,7 @@
   gap: 1rem;
 }
 
-.download-btn {
+.nav-download-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +104,7 @@
   box-shadow: 0 2px 8px rgba(90, 178, 255, 0.25);
 }
 
-.download-btn:hover {
+.nav-download-btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(90, 178, 255, 0.35);
 }
@@ -195,7 +195,7 @@
     background: var(--background-secondary);
   }
 
-  .download-btn {
+  .nav-download-btn {
     display: none;
   }
 }
