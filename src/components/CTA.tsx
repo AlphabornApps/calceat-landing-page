@@ -40,30 +40,14 @@ const CTA: React.FC = () => {
             </div>
           </div>
 
-          {/* Visual - Phone with placeholder */}
+          {/* Visual - Phone mockup */}
           <div className="cta-visual animate-fade-in-up animate-delay-300">
             <div className="cta-phone">
-              <div className="cta-phone-frame">
-                <div className="cta-phone-notch"></div>
-                <div className="cta-phone-screen">
-                  <img
-                    src={appScreenshot}
-                    alt="CalcEat app screenshot showing food logging interface"
-                    className="cta-app-screenshot"
-                  />
-                </div>
-              </div>
-
-              {/* Floating elements */}
-              <div className="cta-float-badge badge-1">
-                <span className="float-icon">🎉</span>
-                <span className="float-text">Start Free Trial</span>
-              </div>
-
-              <div className="cta-float-badge badge-2">
-                <span className="float-icon">⚡</span>
-                <span className="float-text">Instant Setup</span>
-              </div>
+              <img
+                src={appScreenshot}
+                alt="CalcEat app screenshot showing food logging interface"
+                className="cta-phone-image"
+              />
             </div>
           </div>
         </div>

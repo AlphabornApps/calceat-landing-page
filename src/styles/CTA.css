@@ -140,77 +140,11 @@
   filter: drop-shadow(0 25px 50px rgba(90, 178, 255, 0.2));
 }
 
-.cta-phone-frame {
-  width: 320px;
-  height: 650px;
-  background: #1f2937;
-  border-radius: 45px;
-  padding: 12px;
-  position: relative;
-  box-shadow:
-    0 0 0 2px #374151,
-    0 0 0 4px #1f2937,
-    inset 0 0 0 2px #4b5563;
-}
-
-.cta-phone-notch {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 85px;
-  height: 24px;
-  background: #1f2937;
-  border-radius: 16px;
-  z-index: 10;
-}
-
-.cta-phone-screen {
+.cta-phone-image {
   width: 100%;
-  height: 100%;
-  background: var(--primary-gradient);
-  border-radius: 36px;
-  overflow: hidden;
-  position: relative;
-}
-
-.cta-screen-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  background: linear-gradient(135deg, rgba(90, 178, 255, 0.9) 0%, rgba(61, 159, 232, 0.9) 100%);
-  padding: 2rem;
-  text-align: center;
-}
-
-.cta-placeholder-icon {
-  font-size: 4rem;
-  filter: brightness(0) invert(1);
-  opacity: 0.7;
-}
-
-.cta-placeholder-text {
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  margin: 0;
-}
-
-.cta-placeholder-hint {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0;
-}
-
-.cta-app-screenshot {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  max-width: 320px;
+  height: auto;
+  display: block;
 }
 
 /* Floating Badges */
@@ -315,9 +249,8 @@
     height: 500px;
   }
 
-  .cta-phone-frame {
-    width: 280px;
-    height: 570px;
+  .cta-phone-image {
+    max-width: 320px;
   }
 
   .badge-1, .badge-2 {
@@ -347,9 +280,8 @@
     height: 450px;
   }
 
-  .cta-phone-frame {
-    width: 240px;
-    height: 490px;
+  .cta-phone-image {
+    max-width: 280px;
   }
 }
 
