@@ -28,10 +28,10 @@ html {
   width: 1px;
   height: 1px;
   overflow: hidden;
-  background: #fff;
-  color: #2d3748;
+  background: var(--background);
+  color: var(--text-primary);
   padding: 0.75rem 1.25rem;
-  border: 2px solid #667eea;
+  border: 2px solid var(--primary-color);
   border-radius: 8px;
   z-index: 10000;
 }
@@ -42,5 +42,5 @@ html {
   width: auto;
   height: auto;
   transform: translateX(-50%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-lg);
 }

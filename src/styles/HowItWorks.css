@@ -1,6 +1,6 @@
 /* How It Works Section */
 .how-it-works {
-  background: #ffffff;
+  background: var(--background);
   position: relative;
   overflow: hidden;
 }

@@ -6,7 +6,7 @@
   align-items: center;
   padding: 4rem 0 6rem;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--background);
 }
 
 .hero-bg-decoration {
@@ -15,7 +15,7 @@
   right: -10%;
   width: 60%;
   height: 120%;
-  background: #ffffff;
+  background: var(--background);
   pointer-events: none;
   z-index: 0;
 }

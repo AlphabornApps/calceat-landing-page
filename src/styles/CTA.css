@@ -1,6 +1,6 @@
 /* CTA Section - Final Call to Action */
 .cta {
-  background: #ffffff;
+  background: var(--background);
   position: relative;
   overflow: hidden;
 }
@@ -150,7 +150,7 @@
 /* Floating Badges */
 .cta-float-badge {
   position: absolute;
-  background: white;
+  background: var(--background);
   border-radius: 12px;
   padding: 0.75rem 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);

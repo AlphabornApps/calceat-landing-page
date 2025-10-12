@@ -1,6 +1,6 @@
 /* Features Section */
 .features {
-  background: #ffffff;
+  background: var(--background);
   position: relative;
 }
 
