@@ -12,6 +12,15 @@
   margin: 0 auto 4rem;
 }
 
+/* Dark mode specific styles for section header */
+[data-theme='dark'] .section-header .section-title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .section-header .section-description {
+  color: var(--text-secondary);
+}
+
 .section-badge {
   display: inline-flex;
   align-items: center;
@@ -53,7 +62,7 @@
 .section-description {
   font-size: 1.125rem;
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -179,11 +188,21 @@
   font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
 }
 
+/* Dark mode specific styles for step titles */
+[data-theme='dark'] .step-title {
+  color: #ffffff;
+}
+
 .step-description {
   font-size: 0.9375rem;
   line-height: 1.6;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin: 0;
+}
+
+/* Dark mode specific styles for step descriptions */
+[data-theme='dark'] .step-description {
+  color: var(--text-secondary);
 }
 
 /* Connector Arrow */
