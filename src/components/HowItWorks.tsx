@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/HowItWorks.css'
+import snapAPhotoImage from '../assets/images/snap-a-photo.png'
 
 /**
  * How It Works component - Step-by-step process showcase
@@ -61,19 +62,37 @@ const HowItWorks: React.FC = () => {
             >
               {/* Card with iPhone placeholder */}
               <div className="step-visual">
-                <div className="step-phone">
-                  <div className="step-phone-screen">
-                    {/* Placeholder for app screenshot showing this step */}
-                    <div className="step-placeholder">
-                      <div className="step-icon">{step.icon}</div>
-                      <p className="step-placeholder-text">Step {step.number} Screenshot</p>
+                {index === 0 ? (
+                  // First step: Use actual image
+                  <>
+                    <img
+                      src={snapAPhotoImage}
+                      alt="Snap a photo of your meal"
+                      className="step-phone-image"
+                    />
+                    {/* Step number badge */}
+                    <div className={`step-number gradient-${index + 1}`}>
+                      {step.number}
                     </div>
-                  </div>
-                </div>
-                {/* Step number badge */}
-                <div className={`step-number gradient-${index + 1}`}>
-                  {step.number}
-                </div>
+                  </>
+                ) : (
+                  // Other steps: Use placeholder
+                  <>
+                    <div className="step-phone">
+                      <div className="step-phone-screen">
+                        {/* Placeholder for app screenshot showing this step */}
+                        <div className="step-placeholder">
+                          <div className="step-icon">{step.icon}</div>
+                          <p className="step-placeholder-text">Step {step.number} Screenshot</p>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Step number badge */}
+                    <div className={`step-number gradient-${index + 1}`}>
+                      {step.number}
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* Content */}

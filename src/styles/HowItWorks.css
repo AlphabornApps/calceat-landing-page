@@ -80,6 +80,13 @@
   justify-content: center;
 }
 
+.step-phone-image {
+  width: 180px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.15));
+}
+
 .step-phone {
   width: 180px;
   height: 360px;
@@ -250,6 +257,10 @@
   .steps-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .step-phone-image {
+    width: 160px;
   }
 
   .step-phone {
