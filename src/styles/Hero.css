@@ -349,7 +349,13 @@
   }
 
   .hero-visual {
-    height: 600px;
+    height: auto;
+    max-height: 600px;
+  }
+
+  .hero-screenshot {
+    max-width: 100%;
+    max-height: 600px;
   }
 
   .phone-frame {
@@ -396,7 +402,13 @@
   }
 
   .hero-visual {
-    height: 500px;
+    height: auto;
+    max-height: 500px;
+  }
+
+  .hero-screenshot {
+    max-width: 100%;
+    max-height: 500px;
   }
 
   .phone-frame {
