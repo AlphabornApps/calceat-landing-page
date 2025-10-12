@@ -2,6 +2,8 @@ import React from 'react'
 import '../styles/HowItWorks.css'
 import snapAPhotoImage from '../assets/images/snap-a-photo.png'
 import aiAnalysisImage from '../assets/images/ai-analysis.png'
+import getInsightsImage from '../assets/images/get-insights.png'
+import trackProgressImage from '../assets/images/track-progress.png'
 
 /**
  * How It Works component - Step-by-step process showcase
@@ -61,7 +63,7 @@ const HowItWorks: React.FC = () => {
               className="step-card animate-fade-in-up"
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
-              {/* Card with iPhone placeholder */}
+              {/* Card with iPhone screenshot */}
               <div className="step-visual">
                 {index === 0 ? (
                   // First step: Snap a Photo
@@ -89,18 +91,27 @@ const HowItWorks: React.FC = () => {
                       {step.number}
                     </div>
                   </>
-                ) : (
-                  // Other steps: Use placeholder
+                ) : index === 2 ? (
+                  // Third step: Get Insights
                   <>
-                    <div className="step-phone">
-                      <div className="step-phone-screen">
-                        {/* Placeholder for app screenshot showing this step */}
-                        <div className="step-placeholder">
-                          <div className="step-icon">{step.icon}</div>
-                          <p className="step-placeholder-text">Step {step.number} Screenshot</p>
-                        </div>
-                      </div>
+                    <img
+                      src={getInsightsImage}
+                      alt="Get detailed nutritional insights"
+                      className="step-phone-image"
+                    />
+                    {/* Step number badge */}
+                    <div className={`step-number gradient-${index + 1}`}>
+                      {step.number}
                     </div>
+                  </>
+                ) : (
+                  // Fourth step: Track Progress
+                  <>
+                    <img
+                      src={trackProgressImage}
+                      alt="Track your nutrition progress"
+                      className="step-phone-image"
+                    />
                     {/* Step number badge */}
                     <div className={`step-number gradient-${index + 1}`}>
                       {step.number}
