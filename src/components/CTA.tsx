@@ -35,7 +35,7 @@ const CTA: React.FC = () => {
               </div>
               <div className="cta-feature">
                 <span className="feature-check">✓</span>
-                <span>Cancel anytime</span>
+                <span>No Commitment, cancel anytime</span>
               </div>
             </div>
           </div>
