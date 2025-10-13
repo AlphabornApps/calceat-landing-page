@@ -84,6 +84,8 @@
   border-radius: var(--border-radius-large);
   padding: 2rem;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .info-section h2,
@@ -138,6 +140,8 @@
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
 }
 
 .step:hover {
