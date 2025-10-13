@@ -25,10 +25,6 @@ import './styles/App.css'
 function App() {
   return (
     <Router>
-      {/* Skip to content link for accessibility */}
-      <a href="#main" className="skip-link">
-        Skip to main content
-      </a>
       {/* Cookie consent banner */}
       <CookieBanner />
       <div className="App">

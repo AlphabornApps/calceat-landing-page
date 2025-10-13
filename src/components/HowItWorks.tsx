@@ -128,7 +128,7 @@ const HowItWorks: React.FC = () => {
 
               {/* Connecting line (except for last item) */}
               {index < steps.length - 1 && (
-                <div className="step-connector">
+                <div className="step-connector" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" className="connector-arrow">
                     <path
                       d="M13 5l7 7-7 7M5 12h14"

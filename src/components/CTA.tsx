@@ -26,15 +26,15 @@ const CTA: React.FC = () => {
 
             <div className="cta-features animate-fade-in-up animate-delay-300">
               <div className="cta-feature">
-                <span className="feature-check">✓</span>
+                <span className="feature-check" aria-hidden="true">✓</span>
                 <span>Free 3-day trial</span>
               </div>
               <div className="cta-feature">
-                <span className="feature-check">✓</span>
+                <span className="feature-check" aria-hidden="true">✓</span>
                 <span>No credit card required</span>
               </div>
               <div className="cta-feature">
-                <span className="feature-check">✓</span>
+                <span className="feature-check" aria-hidden="true">✓</span>
                 <span>No Commitment, cancel anytime</span>
               </div>
             </div>
