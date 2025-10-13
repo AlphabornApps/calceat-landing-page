@@ -2,17 +2,17 @@ import React from 'react'
 import '../styles/Testimonials.css'
 
 /**
- * Testimonials component - Social proof and benefits showcase
+ * Testimonials component - Social proof and features showcase
  *
- * Features stats and key differentiators
+ * Features stats and key app capabilities
  */
 const Testimonials: React.FC = () => {
   return (
-    <section id="testimonials" className="testimonials section" aria-labelledby="testimonials-title">
+    <section id="features" className="testimonials section" aria-labelledby="features-title">
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
-          <h2 id="testimonials-title" className="section-title animate-fade-in-up animate-delay-100">
+          <h2 id="features-title" className="section-title animate-fade-in-up animate-delay-100">
             Loved by <span className="title-highlight">Thousands</span>
           </h2>
           <p className="section-description animate-fade-in-up animate-delay-200">
