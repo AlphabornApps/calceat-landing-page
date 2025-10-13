@@ -21,7 +21,7 @@ const Support: React.FC = () => {
           {/* Header section */}
           <div className="support-header">
             <h1 className="support-title">
-              Get Support for <span className="text-gradient">CalcEat</span>
+              <span className="text-gradient">CalcEat</span> Support
             </h1>
             <p className="support-subtitle">
               Have questions or need assistance? We're here to help you get the most out of your nutrition tracking experience.
