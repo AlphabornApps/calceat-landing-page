@@ -20,9 +20,6 @@ const Support: React.FC = () => {
         <div className="container">
           {/* Header section */}
           <div className="support-header">
-            <div className="support-badge">
-              <span>Support</span>
-            </div>
             <h1 className="support-title">
               Get Support for <span className="text-gradient">CalcEat</span>
             </h1>
