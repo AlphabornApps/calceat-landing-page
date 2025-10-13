@@ -1,7 +1,7 @@
 import Navbar from './Navbar'
 import Hero from './Hero'
 import HowItWorks from './HowItWorks'
-import Testimonials from './Testimonials'
+import Features from './Features'
 import CTA from './CTA'
 import Footer from './Footer'
 
@@ -26,8 +26,8 @@ function LandingPage() {
         {/* How It Works - step-by-step process */}
         <HowItWorks />
 
-        {/* Testimonials */}
-        <Testimonials />
+        {/* Features */}
+        <Features />
 
         {/* CTA Banner */}
         <CTA />
