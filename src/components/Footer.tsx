@@ -64,14 +64,6 @@ const Footer: React.FC = () => {
         <div className="footer-links-section">
           <div className="footer-links-grid">
             <div className="footer-link-group">
-              <h4 className="footer-link-title">Product</h4>
-              <ul className="footer-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#premium">Premium</a></li>
-                <li><a href="#download">Download</a></li>
-              </ul>
-            </div>
-            <div className="footer-link-group">
               <h4 className="footer-link-title">Support</h4>
               <ul className="footer-links">
                 <li><Link to="/support">Help Center</Link></li>
