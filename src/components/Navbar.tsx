@@ -42,13 +42,13 @@ const Navbar: React.FC = () => {
   return (
     <header className="navbar" role="banner">
       <div className="container navbar-inner">
-        <a href="#main" className="navbar-brand" onClick={scrollToId('main')} aria-label="Go to top">
+        <Link to="/" className="navbar-brand" aria-label="Go to homepage">
           <img src={calceatIcon} alt="CalcEat" className="brand-logo" />
           <span className="brand-text font-display">
             <span className="brand-calc">Calc</span>
             <span className="brand-eat">Eat</span>
           </span>
-        </a>
+        </Link>
 
         <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Primary">
           <a href="#how-it-works" onClick={scrollToId('how-it-works')}>How It Works</a>
