@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
     }
 
     const handleScroll = () => {
-      const sections = ['how-it-works', 'testimonials', 'download']
+      const sections = ['how-it-works', 'features', 'download']
       const scrollPosition = window.scrollY + window.innerHeight / 2
 
       for (const sectionId of sections) {
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
 
         <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Primary">
           <a href="#how-it-works" onClick={scrollToId('how-it-works')} className={activeSection === 'how-it-works' ? 'active' : ''}>How It Works</a>
-          <a href="#testimonials" onClick={scrollToId('testimonials')} className={activeSection === 'testimonials' ? 'active' : ''}>Testimonials</a>
+          <a href="#features" onClick={scrollToId('features')} className={activeSection === 'features' ? 'active' : ''}>Features</a>
           <a href="#download" onClick={scrollToId('download')} className={activeSection === 'download' ? 'active' : ''}>Start Now</a>
           <a href="/support" onClick={handleLinkClick('/support')} className={isActive('/support') ? 'active' : ''}>Support</a>
         </nav>
