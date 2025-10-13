@@ -2,38 +2,11 @@ import React from 'react'
 import '../styles/Testimonials.css'
 
 /**
- * Testimonials component - Modern social proof showcase
+ * Testimonials component - Social proof and benefits showcase
  *
- * Features social proof stats and value propositions
+ * Features stats and key differentiators
  */
 const Testimonials: React.FC = () => {
-  const valueProps = [
-    {
-      icon: '⚡',
-      title: 'Save 10+ Hours Per Week',
-      description: 'Stop spending time manually entering food data. Our AI does the heavy lifting, giving you instant nutritional breakdowns.',
-      gradient: 'from-yellow-400 to-orange-500'
-    },
-    {
-      icon: '🎯',
-      title: 'Reach Your Goals Faster',
-      description: 'With accurate tracking and personalized insights, you\'ll see results 3x faster than traditional methods.',
-      gradient: 'from-blue-400 to-purple-500'
-    },
-    {
-      icon: '💪',
-      title: 'Stay Consistent',
-      description: 'Make nutrition tracking so simple that you actually stick with it. 89% of users are still active after 3 months.',
-      gradient: 'from-green-400 to-teal-500'
-    },
-    {
-      icon: '🧠',
-      title: 'Learn As You Track',
-      description: 'Discover hidden nutritional patterns and make smarter food choices with our intelligent recommendations.',
-      gradient: 'from-pink-400 to-red-500'
-    }
-  ]
-
   return (
     <section id="testimonials" className="testimonials section" aria-labelledby="testimonials-title">
       <div className="container">
@@ -49,7 +22,7 @@ const Testimonials: React.FC = () => {
         </div>
 
         {/* Stats Bar */}
-        <div className="testimonials-stats animate-fade-in-up animate-delay-100">
+        <div className="testimonials-stats animate-fade-in-up animate-delay-300">
           <div className="stat-item">
             <div className="stat-icon stat-icon-star" aria-hidden="true">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0">
@@ -88,24 +61,50 @@ const Testimonials: React.FC = () => {
           </div>
         </div>
 
-        {/* Value Propositions Grid */}
-        <div className="value-props-grid">
-          {valueProps.map((prop, index) => (
-            <div
-              key={index}
-              className="value-card animate-fade-in-up"
-              style={{ animationDelay: `${0.4 + index * 0.1}s` }}
-            >
-              <div className="value-icon-wrapper">
-                <div className={`value-icon gradient-${prop.gradient}`}>
-                  <span className="icon-emoji">{prop.icon}</span>
-                </div>
-              </div>
-              <h3 className="value-title">{prop.title}</h3>
-              <p className="value-description">{prop.description}</p>
-              <div className="value-card-glow"></div>
+        {/* Benefits Grid */}
+        <div className="benefits-grid">
+          <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="benefit-icon-large gradient-blue">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+              </svg>
             </div>
-          ))}
+            <h3 className="benefit-card-title">AI Food Recognition</h3>
+            <p className="benefit-card-description">Snap a photo or type your meal. Our AI instantly analyzes and logs everything automatically.</p>
+          </div>
+
+          <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+            <div className="benefit-icon-large gradient-purple">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 className="benefit-card-title">Daily Progress Tracking</h3>
+            <p className="benefit-card-description">Monitor calories, macros, and water intake with beautiful real-time dashboards.</p>
+          </div>
+
+          <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+            <div className="benefit-icon-large gradient-green">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 className="benefit-card-title">Personalized Goals</h3>
+            <p className="benefit-card-description">Set custom targets based on your BMR, TDEE, activity level, and weight goals.</p>
+          </div>
+
+          <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
+            <div className="benefit-icon-large gradient-orange">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 className="benefit-card-title">Weight Progress Charts</h3>
+            <p className="benefit-card-description">Visualize your weight journey with detailed graphs and track your transformation over time.</p>
+          </div>
         </div>
       </div>
     </section>
