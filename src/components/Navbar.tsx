@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import '../styles/Navbar.css'
 import calceatIcon from '../assets/icons/calceat-icon.png'
 
