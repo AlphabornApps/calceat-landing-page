@@ -1,38 +1,45 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
+import Footer from './Footer'
 import '../styles/DeleteAccount.css'
 
 /**
  * Delete Account component - Provides guidance for users who want to delete their account
- * 
+ *
  * This component explains the account deletion process and guides users through
  * the steps needed to permanently delete their account and all associated data.
  * The deletion is GDPR compliant and irreversible.
  */
 const DeleteAccount: React.FC = () => {
   return (
-    <div className="delete-account">
-      <div className="container">
-        {/* Header */}
-        <div className="header">
-          <Link to="/" className="back-link">← Back to Home</Link>
-          <h1 className="page-title">Delete Your Account</h1>
-        </div>
+    <div className="delete-account-page">
+      <Navbar />
 
-        {/* Warning Section */}
-        <div className="warning-section">
-          <div className="warning-box">
-            <div className="warning-icon">⚠️</div>
-            <div className="warning-content">
-              <h2>This action cannot be undone</h2>
-              <p>
-                When you delete your account, all your personal data will be permanently removed 
-                from our servers. This includes your profile, meal history, nutrition data, 
-                and any other information associated with your account.
-              </p>
+      <main className="delete-account-main">
+        <div className="container">
+          {/* Header */}
+          <div className="header">
+            <h1 className="page-title">Delete Your Account</h1>
+            <p className="page-subtitle">
+              Permanently remove your account and all associated data
+            </p>
+          </div>
+
+          {/* Warning Section */}
+          <div className="warning-section">
+            <div className="warning-box">
+              <div className="warning-icon">⚠️</div>
+              <div className="warning-content">
+                <h2>This action cannot be undone</h2>
+                <p>
+                  When you delete your account, all your personal data will be permanently removed
+                  from our servers. This includes your profile, meal history, nutrition data,
+                  and any other information associated with your account.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
         {/* What Gets Deleted Section */}
         <div className="info-section">
@@ -123,13 +130,10 @@ const DeleteAccount: React.FC = () => {
           </p>
         </div>
 
-        {/* Footer Navigation */}
-        <div className="footer-nav">
-          <Link to="/">← Back to Home</Link>
-          <Link to="/privacy">Privacy Policy</Link>
-          <Link to="/terms">Terms of Service</Link>
         </div>
-      </div>
+      </main>
+
+      <Footer />
     </div>
   )
 }
