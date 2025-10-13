@@ -95,7 +95,7 @@ const Testimonials: React.FC = () => {
               </svg>
             </div>
             <div className="stat-content">
-              <div className="stat-number">500K+</div>
+              <div className="stat-number">1M+</div>
               <div className="stat-label">Meals Tracked</div>
             </div>
           </div>

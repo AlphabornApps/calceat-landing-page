@@ -99,7 +99,7 @@ const Features: React.FC = () => {
             </p>
             <div className="showcase-stats">
               <div className="showcase-stat">
-                <div className="stat-value">500K+</div>
+                <div className="stat-value">1M+</div>
                 <div className="stat-label">Meals Tracked</div>
               </div>
               <div className="showcase-stat">
