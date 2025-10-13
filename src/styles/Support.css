@@ -84,7 +84,7 @@
 
 /* Contact section */
 .contact-card {
-  background: #ffffff;
+  background: var(--background);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-large);
   padding: 2rem;
@@ -130,7 +130,7 @@
 }
 
 .faq-item {
-  background: #ffffff;
+  background: var(--background);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   padding: 1.5rem;
