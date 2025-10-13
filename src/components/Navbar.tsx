@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import '../styles/Navbar.css'
 import calceatIcon from '../assets/icons/calceat-icon.png'
 
@@ -23,6 +23,8 @@ function useTheme() {
 const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme()
   const [open, setOpen] = React.useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   React.useEffect(() => {
     const onResize = () => {
@@ -35,8 +37,19 @@ const Navbar: React.FC = () => {
   const scrollToId = (id: string) => (e: React.MouseEvent) => {
     e.preventDefault()
     setOpen(false)
-    const el = document.getElementById(id)
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+    // If not on homepage, navigate to homepage first
+    if (location.pathname !== '/') {
+      navigate('/')
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const el = document.getElementById(id)
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }, 100)
+    } else {
+      const el = document.getElementById(id)
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
   }
 
   return (
