@@ -65,10 +65,8 @@ const Testimonials: React.FC = () => {
         <div className="benefits-grid">
           <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div className="benefit-icon-large gradient-blue">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                <circle cx="8.5" cy="8.5" r="1.5"/>
-                <polyline points="21 15 16 10 5 21"/>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
               </svg>
             </div>
             <h3 className="benefit-card-title">AI Food Recognition</h3>
@@ -77,9 +75,8 @@ const Testimonials: React.FC = () => {
 
           <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <div className="benefit-icon-large gradient-purple">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
               </svg>
             </div>
             <h3 className="benefit-card-title">Daily Progress Tracking</h3>
@@ -88,8 +85,8 @@ const Testimonials: React.FC = () => {
 
           <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
             <div className="benefit-icon-large gradient-green">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/>
               </svg>
             </div>
             <h3 className="benefit-card-title">Personalized Goals</h3>
@@ -98,12 +95,32 @@ const Testimonials: React.FC = () => {
 
           <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
             <div className="benefit-icon-large gradient-orange">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
               </svg>
             </div>
             <h3 className="benefit-card-title">Weight Progress Charts</h3>
             <p className="benefit-card-description">Visualize your weight journey with detailed graphs and track your transformation over time.</p>
+          </div>
+
+          <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+            <div className="benefit-icon-large gradient-pink">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <h3 className="benefit-card-title">Favorite Foods</h3>
+            <p className="benefit-card-description">Save your frequently eaten foods as favorites for instant tracking. Log your go-to meals in seconds.</p>
+          </div>
+
+          <div className="benefit-card animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
+            <div className="benefit-icon-large gradient-teal">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+              </svg>
+            </div>
+            <h3 className="benefit-card-title">Bank-Level Security</h3>
+            <p className="benefit-card-description">Your data is encrypted and stored securely. We never share your personal information with third parties.</p>
           </div>
         </div>
       </div>
