@@ -45,32 +45,38 @@
 }
 
 .warning-box {
-  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-  border: 1px solid #fecaca;
+  background: var(--background);
+  border: 2px solid var(--border-color);
   border-radius: var(--border-radius-large);
   padding: 2rem;
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.warning-box:hover {
+  border-color: var(--text-secondary);
 }
 
 .warning-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   flex-shrink: 0;
+  opacity: 0.8;
 }
 
 .warning-content h2 {
-  color: #dc2626;
-  font-size: 1.5rem;
-  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
   margin: 0 0 0.75rem 0;
   font-family: 'Inter', sans-serif;
 }
 
 .warning-content p {
-  color: #991b1b;
+  color: var(--text-secondary);
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.7;
 }
 
