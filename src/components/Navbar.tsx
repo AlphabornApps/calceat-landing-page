@@ -23,6 +23,7 @@ function useTheme() {
 const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme()
   const [open, setOpen] = React.useState(false)
+  const [activeSection, setActiveSection] = React.useState<string>('')
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -33,6 +34,35 @@ const Navbar: React.FC = () => {
     window.addEventListener('resize', onResize)
     return () => window.removeEventListener('resize', onResize)
   }, [])
+
+  // Track active section based on scroll position
+  React.useEffect(() => {
+    if (location.pathname !== '/') {
+      setActiveSection('')
+      return
+    }
+
+    const handleScroll = () => {
+      const sections = ['how-it-works', 'testimonials', 'download']
+      const scrollPosition = window.scrollY + window.innerHeight / 2
+
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          const { offsetTop, offsetHeight } = element
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(sectionId)
+            return
+          }
+        }
+      }
+      setActiveSection('')
+    }
+
+    handleScroll() // Initial check
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [location.pathname])
 
   const scrollToId = (id: string) => (e: React.MouseEvent) => {
     e.preventDefault()
@@ -52,6 +82,9 @@ const Navbar: React.FC = () => {
     }
   }
 
+  // Check if a link is active based on current path
+  const isActive = (path: string) => location.pathname === path
+
   return (
     <header className="navbar" role="banner">
       <div className="container navbar-inner">
@@ -64,10 +97,10 @@ const Navbar: React.FC = () => {
         </Link>
 
         <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Primary">
-          <a href="#how-it-works" onClick={scrollToId('how-it-works')}>How It Works</a>
-          <a href="#testimonials" onClick={scrollToId('testimonials')}>Testimonials</a>
-          <a href="#download" onClick={scrollToId('download')}>Start Now</a>
-          <Link to="/support">Support</Link>
+          <a href="#how-it-works" onClick={scrollToId('how-it-works')} className={activeSection === 'how-it-works' ? 'active' : ''}>How It Works</a>
+          <a href="#testimonials" onClick={scrollToId('testimonials')} className={activeSection === 'testimonials' ? 'active' : ''}>Testimonials</a>
+          <a href="#download" onClick={scrollToId('download')} className={activeSection === 'download' ? 'active' : ''}>Start Now</a>
+          <Link to="/support" className={isActive('/support') ? 'active' : ''}>Support</Link>
         </nav>
 
         <div className="nav-actions">
