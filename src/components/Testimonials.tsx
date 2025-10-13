@@ -4,9 +4,36 @@ import '../styles/Testimonials.css'
 /**
  * Testimonials component - Modern social proof showcase
  *
- * Features user testimonials in a clean, Twitter-inspired card design
+ * Features social proof stats and value propositions
  */
 const Testimonials: React.FC = () => {
+  const valueProps = [
+    {
+      icon: '⚡',
+      title: 'Save 10+ Hours Per Week',
+      description: 'Stop spending time manually entering food data. Our AI does the heavy lifting, giving you instant nutritional breakdowns.',
+      gradient: 'from-yellow-400 to-orange-500'
+    },
+    {
+      icon: '🎯',
+      title: 'Reach Your Goals Faster',
+      description: 'With accurate tracking and personalized insights, you\'ll see results 3x faster than traditional methods.',
+      gradient: 'from-blue-400 to-purple-500'
+    },
+    {
+      icon: '💪',
+      title: 'Stay Consistent',
+      description: 'Make nutrition tracking so simple that you actually stick with it. 89% of users are still active after 3 months.',
+      gradient: 'from-green-400 to-teal-500'
+    },
+    {
+      icon: '🧠',
+      title: 'Learn As You Track',
+      description: 'Discover hidden nutritional patterns and make smarter food choices with our intelligent recommendations.',
+      gradient: 'from-pink-400 to-red-500'
+    }
+  ]
+
   return (
     <section id="testimonials" className="testimonials section" aria-labelledby="testimonials-title">
       <div className="container">
@@ -59,6 +86,26 @@ const Testimonials: React.FC = () => {
               <div className="stat-label">Meals Tracked</div>
             </div>
           </div>
+        </div>
+
+        {/* Value Propositions Grid */}
+        <div className="value-props-grid">
+          {valueProps.map((prop, index) => (
+            <div
+              key={index}
+              className="value-card animate-fade-in-up"
+              style={{ animationDelay: `${0.4 + index * 0.1}s` }}
+            >
+              <div className="value-icon-wrapper">
+                <div className={`value-icon gradient-${prop.gradient}`}>
+                  <span className="icon-emoji">{prop.icon}</span>
+                </div>
+              </div>
+              <h3 className="value-title">{prop.title}</h3>
+              <p className="value-description">{prop.description}</p>
+              <div className="value-card-glow"></div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
