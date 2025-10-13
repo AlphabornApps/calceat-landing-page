@@ -119,8 +119,8 @@ const Testimonials: React.FC = () => {
                 <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
               </svg>
             </div>
-            <h3 className="benefit-card-title">Bank-Level Security</h3>
-            <p className="benefit-card-description">Your data is encrypted and stored securely. We never share your personal information with third parties.</p>
+            <h3 className="benefit-card-title">Privacy & Security</h3>
+            <p className="benefit-card-description">Protected by state-of-the-art security systems. Your data stays private and is never shared with third parties.</p>
           </div>
         </div>
       </div>
