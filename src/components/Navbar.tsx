@@ -35,6 +35,11 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('resize', onResize)
   }, [])
 
+  // Scroll to top on route change
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   // Track active section based on scroll position
   React.useEffect(() => {
     if (location.pathname !== '/') {
@@ -82,25 +87,31 @@ const Navbar: React.FC = () => {
     }
   }
 
+  const handleLinkClick = (path: string) => (e: React.MouseEvent) => {
+    e.preventDefault()
+    setOpen(false)
+    navigate(path)
+  }
+
   // Check if a link is active based on current path
   const isActive = (path: string) => location.pathname === path
 
   return (
     <header className="navbar" role="banner">
       <div className="container navbar-inner">
-        <Link to="/" className="navbar-brand" aria-label="Go to homepage">
+        <a href="/" onClick={handleLinkClick('/')} className="navbar-brand" aria-label="Go to homepage">
           <img src={calceatIcon} alt="CalcEat" className="brand-logo" />
           <span className="brand-text font-display">
             <span className="brand-calc">Calc</span>
             <span className="brand-eat">Eat</span>
           </span>
-        </Link>
+        </a>
 
         <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Primary">
           <a href="#how-it-works" onClick={scrollToId('how-it-works')} className={activeSection === 'how-it-works' ? 'active' : ''}>How It Works</a>
           <a href="#testimonials" onClick={scrollToId('testimonials')} className={activeSection === 'testimonials' ? 'active' : ''}>Testimonials</a>
           <a href="#download" onClick={scrollToId('download')} className={activeSection === 'download' ? 'active' : ''}>Start Now</a>
-          <Link to="/support" className={isActive('/support') ? 'active' : ''}>Support</Link>
+          <a href="/support" onClick={handleLinkClick('/support')} className={isActive('/support') ? 'active' : ''}>Support</a>
         </nav>
 
         <div className="nav-actions">
