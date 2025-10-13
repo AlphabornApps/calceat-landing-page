@@ -43,7 +43,7 @@ const DeleteAccount: React.FC = () => {
 
         {/* What Gets Deleted Section */}
         <div className="info-section">
-          <h2>What will be deleted:</h2>
+          <h2>What Will Be Deleted</h2>
           <ul className="deletion-list">
             <li>Your personal profile and account information</li>
             <li>All meal records and nutrition tracking data</li>
@@ -57,7 +57,7 @@ const DeleteAccount: React.FC = () => {
 
         {/* How to Delete Section */}
         <div className="instructions-section">
-          <h2>How to delete your account:</h2>
+          <h2>How to Delete Your Account</h2>
           <div className="steps">
             <div className="step">
               <div className="step-number">1</div>
