@@ -111,7 +111,7 @@ function TermsConditions() {
             </a>
           </li>
           <li>
-            <a href="https://www.bugsnag.com/terms-of-service" target="_blank" rel="noopener noreferrer">
+            <a href="https://smartbear.com/terms-of-use/" target="_blank" rel="noopener noreferrer">
               Bugsnag (Terms)
             </a>
           </li>
