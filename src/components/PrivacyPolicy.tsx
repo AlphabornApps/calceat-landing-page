@@ -30,10 +30,10 @@ function PrivacyPolicy() {
           For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to:
         </p>
         <ul>
-          <li><strong>Account Information:</strong> First Name, Last Name, Email Address, User ID, Password.</li>
-          <li><strong>Profile & Goal Data:</strong> Height, weight, activity level, and dietary goals.</li>
-          <li><strong>Meal & Usage Data:</strong> Meal data (including timestamps and food items), food images (for AI analysis), favorite meal items, user preferences, and app settings.</li>
-          <li><strong>Authentication & Session Data:</strong> Authentication tokens and login history.</li>
+          <li><b>Account Information:</b> First Name, Last Name, Email Address, User ID, Password.</li>
+          <li><b>Profile & Goal Data:</b> Height, weight, activity level, and dietary goals.</li>
+          <li><b>Meal & Usage Data:</b> Meal data (including timestamps and food items), food images (for AI analysis), favorite meal items, user preferences, and app settings.</li>
+          <li><b>Authentication & Session Data:</b> Authentication tokens and login history.</li>
         </ul>
 
         <br />
@@ -42,8 +42,8 @@ function PrivacyPolicy() {
           The Application integrates with Apple HealthKit and Google Health Connect. With your explicit consent, we may:
         </p>
         <ul>
-          <li><strong>Read Data:</strong> Access data such as active/basal calories, steps, and workout information to provide a comprehensive health overview.</li>
-          <li><strong>Write Data:</strong> Write data you log in the Application, such as nutrition data, weight, and height, back to your health profile.</li>
+          <li><b>Read Data:</b> Access data such as active/basal calories, steps, and workout information to provide a comprehensive health overview.</li>
+          <li><b>Write Data:</b> Write data you log in the Application, such as nutrition data, weight, and height, back to your health profile.</li>
         </ul>
         <p>
           You maintain full control over these permissions and can grant or revoke them at any time through your device's operating system settings (in the Apple Health or Google Health Connect apps).
@@ -55,11 +55,11 @@ function PrivacyPolicy() {
           The Application may collect certain information automatically, including, but not limited to:
         </p>
         <ul>
-          <li><strong>Device & Connection Information:</strong> Your device's Internet Protocol address (e.g., IP address), device identifiers (such as IDFA or Android ID), device hardware information, device token (for push notifications), device type, and the operating system you use.</li>
-          <li><strong>Usage & Analytics Data:</strong> The pages of the Application that you visit, the time and date of your visit, the time spent on those pages, app usage events, user behavior, and conversion tracking data.</li>
-          <li><strong>Performance Data:</strong> Crash reports and error logs to help us identify and fix bugs.</li>
-          <li><strong>Application Information:</strong> App version, platform, account status, account creation date, and last activity.</li>
-          <li><strong>Payment & Subscription Data:</strong> Subscription status, purchase history, and entitlements (managed primarily by our payment processor).</li>
+          <li><b>Device & Connection Information:</b> Your device's Internet Protocol address (e.g., IP address), device identifiers (such as IDFA or Android ID), device hardware information, device token (for push notifications), device type, and the operating system you use.</li>
+          <li><b>Usage & Analytics Data:</b> The pages of the Application that you visit, the time and date of your visit, the time spent on those pages, app usage events, user behavior, and conversion tracking data.</li>
+          <li><b>Performance Data:</b> Crash reports and error logs to help us identify and fix bugs.</li>
+          <li><b>Application Information:</b> App version, platform, account status, account creation date, and last activity.</li>
+          <li><b>Payment & Subscription Data:</b> Subscription status, purchase history, and entitlements (managed primarily by our payment processor).</li>
         </ul>
 
         <p>
@@ -91,42 +91,77 @@ function PrivacyPolicy() {
           Below is a list of the third-party service providers used by the Application:
         </p>
 
-        <strong>Analytics & Tracking Services:</strong>
-        <ul>
-          <li><strong>Mixpanel:</strong> Used for user behavior analytics and event tracking. [Link to Mixpanel Privacy Policy]</li>
-          <li><strong>Facebook/Meta App Events:</strong> Used for install tracking, ad attribution, and conversion tracking. [Link to Meta Privacy Policy]</li>
-        </ul>
-
-        <strong>Payment Services:</strong>
+        <p><b>Analytics & Tracking Services:</b></p>
         <ul>
           <li>
-            <strong>RevenueCat:</strong> Used for managing subscriptions, in-app purchases, and paywalls. (Privacy Policy:{' '}
-            <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">
-              https://www.revenuecat.com/privacy
+            <b>Mixpanel:</b> Used for user behavior analytics and event tracking. (
+            <a href="https://mixpanel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>)
+          </li>
+          <li>
+            <b>Facebook/Meta App Events:</b> Used for install tracking, ad attribution, and conversion tracking. (
+            <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
             </a>)
           </li>
         </ul>
 
-        <strong>Error Monitoring:</strong>
+        <p><b>Payment Services:</b></p>
         <ul>
-          <li><strong>Bugsnag:</strong> Used for crash reporting and error monitoring to improve app stability. [Link to Bugsnag Privacy Policy]</li>
+          <li>
+            <b>RevenueCat:</b> Used for managing subscriptions, in-app purchases, and paywalls. (
+            <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>)
+          </li>
         </ul>
 
-        <strong>Push Notifications:</strong>
+        <p><b>Error Monitoring:</b></p>
         <ul>
-          <li><strong>Firebase Cloud Messaging (FCM):</strong> Used to send push notifications to Android devices. [Link to Google/Firebase Privacy Policy]</li>
-          <li><strong>Apple Push Notification service (APNs):</strong> Used to send push notifications to iOS devices. [Link to Apple Privacy Policy]</li>
+          <li>
+            <b>Bugsnag:</b> Used for crash reporting and error monitoring to improve app stability. (
+            <a href="https://smartbear.com/privacy/?_gl=1*cvyrn7*_gcl_au*MTE4OTMyNTk3Mi4xNzU5OTMzMDQ4" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>)
+          </li>
         </ul>
 
-        <strong>Health Data Integration:</strong>
+        <p><b>Push Notifications:</b></p>
         <ul>
-          <li><strong>Apple HealthKit:</strong> Used to read/write health data on iOS with your permission. [Link to Apple Privacy Policy]</li>
-          <li><strong>Google Health Connect:</strong> Used to read/write health data on Android with your permission. [Link to Google Privacy Policy]</li>
+          <li>
+            <b>Firebase Cloud Messaging (FCM):</b> Used to send push notifications to Android devices. (
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>)
+          </li>
+          <li>
+            <b>Apple Push Notification service (APNs):</b> Used to send push notifications to iOS devices. (
+            <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>)
+          </li>
         </ul>
 
-        <strong>AI & Backend Services:</strong>
+        <p><b>Health Data Integration:</b></p>
         <ul>
-          <li><strong>CalcEat Backend API & AI:</strong> Our core server (built on Node.js/Express) processes your account data, meal entries, and food images for nutritional analysis.</li>
+          <li>
+            <b>Apple HealthKit:</b> Used to read/write health data on iOS with your permission. (
+            <a href="https://developer.apple.com/documentation/healthkit/protecting-user-privacy" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>)
+          </li>
+          <li>
+            <b>Google Health Connect:</b> Used to read/write health data on Android with your permission. (
+            <a href="https://health.google/privacy" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>)
+          </li>
+        </ul>
+
+        <p><b>AI & Backend Services:</b></p>
+        <ul>
+          <li><b>CalcEat Backend API & AI:</b> Our core server (built on Node.js/Express) processes your account data, meal entries, and food images for nutritional analysis.</li>
         </ul>
 
         <br />
@@ -137,10 +172,10 @@ function PrivacyPolicy() {
 
         <p>You also have the following rights to control your data:</p>
         <ul>
-          <li><strong>Account Deletion:</strong> You can request the deletion of your account and all associated User Provided Data at any time. The primary way to do this is by using the "Delete Account" feature, which can be found in your account settings within the Application.</li>
-          <li><strong>Health Data:</strong> You can manage or revoke data-sharing permissions for Apple HealthKit and Google Health Connect at any time through your device's settings.</li>
-          <li><strong>Notifications:</strong> You can manage push notification preferences within the Application's settings or through your device's notification settings.</li>
-          <li><strong>Ad Tracking:</strong> On iOS devices, you can manage permissions for ad tracking via the App Tracking Transparency (ATT) prompt.</li>
+          <li><b>Account Deletion:</b> You can request the deletion of your account and all associated User Provided Data at any time. The primary way to do this is by using the "Delete Account" feature, which can be found in your account settings within the Application.</li>
+          <li><b>Health Data:</b> You can manage or revoke data-sharing permissions for Apple HealthKit and Google Health Connect at any time through your device's settings.</li>
+          <li><b>Notifications:</b> You can manage push notification preferences within the Application's settings or through your device's notification settings.</li>
+          <li><b>Ad Tracking:</b> On iOS devices, you can manage permissions for ad tracking via the App Tracking Transparency (ATT) prompt.</li>
         </ul>
 
         <br />
