@@ -15,7 +15,7 @@ const DeleteAccount: React.FC = () => {
     <div className="delete-account-page">
       <Navbar />
 
-      <main className="delete-account-main">
+      <main id="main" tabIndex={-1} className="delete-account-main">
         <div className="container">
           {/* Header */}
           <div className="header">

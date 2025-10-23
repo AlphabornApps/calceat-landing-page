@@ -31,9 +31,21 @@ const Navbar: React.FC = () => {
     const onResize = () => {
       if (window.innerWidth > 768) setOpen(false)
     }
+
+    // Close mobile menu on Escape key press
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && open) {
+        setOpen(false)
+      }
+    }
+
     window.addEventListener('resize', onResize)
-    return () => window.removeEventListener('resize', onResize)
-  }, [])
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      window.removeEventListener('resize', onResize)
+      document.removeEventListener('keydown', onKeyDown)
+    }
+  }, [open])
 
   // Scroll to top on route change
   React.useEffect(() => {

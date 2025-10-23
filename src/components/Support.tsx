@@ -16,7 +16,7 @@ const Support: React.FC = () => {
     <div className="support-page">
       <Navbar />
 
-      <main className="support-main">
+      <main id="main" tabIndex={-1} className="support-main">
         <div className="container">
           {/* Header section */}
           <div className="support-header">

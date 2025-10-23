@@ -13,7 +13,8 @@ import '../styles/TermsConditions.css'
 function TermsConditions() {
   return (
     <div className="terms-conditions">
-      <div className="terms-content">
+      <main id="main" tabIndex={-1}>
+        <div className="terms-content">
         <strong>Terms &amp; Conditions</strong>
 
         <p>
@@ -180,7 +181,8 @@ function TermsConditions() {
           If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at alphabornapps@gmail.com.
         </p>
 
-      </div>
+        </div>
+      </main>
     </div>
   )
 }

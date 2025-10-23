@@ -12,7 +12,8 @@ import '../styles/PrivacyPolicy.css'
 function PrivacyPolicy() {
   return (
     <div className="privacy-policy">
-      <div className="privacy-content">
+      <main id="main" tabIndex={-1}>
+        <div className="privacy-content">
         <strong>Privacy Policy</strong>
         <p>
           This privacy policy applies to the CalcEat app (hereby referred to as "Application") for mobile devices that was created by Alphaborn (hereby referred to as "Service Provider") as a Commercial service. This service is intended for use "AS IS".
@@ -235,7 +236,8 @@ function PrivacyPolicy() {
           If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact the Service Provider via email at alphabornapps@gmail.com.
         </p>
 
-      </div>
+        </div>
+      </main>
     </div>
   )
 }

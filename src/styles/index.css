@@ -29,8 +29,8 @@ body {
   --primary-gradient: linear-gradient(135deg, #5AB2FF 0%, #3D9FE8 100%);
   --text-gradient: linear-gradient(135deg, #5AB2FF 0%, #3D9FE8 100%);
   --text-primary: #1a1a1a;
-  --text-secondary: #6b7280;
-  --text-muted: #9ca3af;
+  --text-secondary: #4b5563; /* Improved from #6b7280 for better contrast (WCAG AA 7.0:1) */
+  --text-muted: #6b7280; /* Improved from #9ca3af for better contrast (WCAG AA 4.6:1) */
   --background: #ffffff;
   --background-secondary: #fafafa;
   --background-tertiary: #f8fafc;
@@ -96,6 +96,7 @@ body {
   overflow: hidden;
   font-family: 'Inter', sans-serif;
   min-width: 240px;
+  min-height: 44px; /* WCAG touch target minimum */
 }
 
 .btn::before {

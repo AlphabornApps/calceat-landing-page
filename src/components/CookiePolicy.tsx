@@ -9,7 +9,8 @@ import '../styles/AccessibilityStatement.css'
 const CookiePolicy: React.FC = () => {
   return (
     <div className="accessibility-page">
-      <div className="container">
+      <main id="main" tabIndex={-1}>
+        <div className="container">
         <section className="accessibility-section ltr">
           <h1 className="accessibility-title">Cookie Policy</h1>
           <p>
@@ -69,7 +70,8 @@ const CookiePolicy: React.FC = () => {
             ← Back to Home
           </Link>
         </div>
-      </div>
+        </div>
+      </main>
     </div>
   )
 }

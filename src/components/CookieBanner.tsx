@@ -29,6 +29,20 @@ const CookieBanner: React.FC = () => {
     }
   }, [])
 
+  // Close banner on Escape key (defaults to essential only)
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && visible) {
+        essentialOnly()
+      }
+    }
+
+    if (visible) {
+      document.addEventListener('keydown', onKeyDown)
+      return () => document.removeEventListener('keydown', onKeyDown)
+    }
+  }, [visible])
+
   const acceptAll = () => {
     localStorage.setItem(COOKIE_KEY, 'all')
     setVisible(false)
