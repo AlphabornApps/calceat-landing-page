@@ -62,9 +62,16 @@
 }
 
 .warning-icon {
-  font-size: 2rem;
   flex-shrink: 0;
   opacity: 0.8;
+  width: 2rem;
+  height: 2rem;
+  color: #ef4444;
+}
+
+.warning-svg {
+  width: 100%;
+  height: 100%;
 }
 
 .warning-content h2 {

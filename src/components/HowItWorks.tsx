@@ -16,28 +16,28 @@ const HowItWorks: React.FC = () => {
       number: '01',
       title: 'Snap a Photo',
       description: 'Simply take a picture of your meal with your phone camera. Our AI works with any food, anywhere.',
-      icon: '📸',
+      ariaLabel: 'Step 1: Take a photo of your meal',
       color: 'from-blue-500 to-purple-600'
     },
     {
       number: '02',
       title: 'AI Analysis',
       description: 'Our advanced AI instantly recognizes ingredients, calculates portions, and breaks down the nutritional content.',
-      icon: '🤖',
+      ariaLabel: 'Step 2: AI analyzes your food',
       color: 'from-purple-500 to-pink-600'
     },
     {
       number: '03',
       title: 'Get Insights',
       description: 'Receive detailed nutritional information including calories, macros, vitamins, and personalized recommendations.',
-      icon: '📊',
+      ariaLabel: 'Step 3: View nutritional insights',
       color: 'from-pink-500 to-red-600'
     },
     {
       number: '04',
       title: 'Track Progress',
       description: 'Monitor your nutrition journey with beautiful charts and achieve your health goals with smart tracking.',
-      icon: '🎯',
+      ariaLabel: 'Step 4: Track your progress',
       color: 'from-orange-500 to-yellow-500'
     }
   ]
@@ -62,6 +62,7 @@ const HowItWorks: React.FC = () => {
               key={index}
               className="step-card animate-fade-in-up"
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+              aria-label={step.ariaLabel}
             >
               {/* Card with iPhone screenshot */}
               <div className="step-visual">

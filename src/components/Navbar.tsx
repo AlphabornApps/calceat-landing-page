@@ -107,11 +107,43 @@ const Navbar: React.FC = () => {
           </span>
         </a>
 
-        <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Primary">
-          <a href="#how-it-works" onClick={scrollToId('how-it-works')} className={activeSection === 'how-it-works' ? 'active' : ''}>How It Works</a>
-          <a href="#features" onClick={scrollToId('features')} className={activeSection === 'features' ? 'active' : ''}>Features</a>
-          <a href="#download" onClick={scrollToId('download')} className={activeSection === 'download' ? 'active' : ''}>Start Now</a>
-          <a href="/support" onClick={handleLinkClick('/support')} className={isActive('/support') ? 'active' : ''}>Support</a>
+        <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Primary navigation">
+          <a
+            href="#how-it-works"
+            onClick={scrollToId('how-it-works')}
+            className={activeSection === 'how-it-works' ? 'active' : ''}
+            aria-label="Learn how CalcEat works"
+            aria-current={activeSection === 'how-it-works' ? 'page' : undefined}
+          >
+            How It Works
+          </a>
+          <a
+            href="#features"
+            onClick={scrollToId('features')}
+            className={activeSection === 'features' ? 'active' : ''}
+            aria-label="View CalcEat features"
+            aria-current={activeSection === 'features' ? 'page' : undefined}
+          >
+            Features
+          </a>
+          <a
+            href="#download"
+            onClick={scrollToId('download')}
+            className={activeSection === 'download' ? 'active' : ''}
+            aria-label="Download CalcEat app"
+            aria-current={activeSection === 'download' ? 'page' : undefined}
+          >
+            Start Now
+          </a>
+          <a
+            href="/support"
+            onClick={handleLinkClick('/support')}
+            className={isActive('/support') ? 'active' : ''}
+            aria-label="Get support for CalcEat"
+            aria-current={isActive('/support') ? 'page' : undefined}
+          >
+            Support
+          </a>
         </nav>
 
         <div className="nav-actions">
@@ -122,11 +154,35 @@ const Navbar: React.FC = () => {
           </button>
           <button
             className="menu-toggle"
-            aria-label="Toggle menu"
+            aria-label={open ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={open}
             onClick={() => setOpen((s) => !s)}
           >
-            {open ? '✕' : '☰'}
+            <svg
+              className="menu-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              {open ? (
+                // Close icon (X)
+                <>
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </>
+              ) : (
+                // Hamburger menu icon
+                <>
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </>
+              )}
+            </svg>
           </button>
         </div>
       </div>

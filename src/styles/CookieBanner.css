@@ -23,7 +23,7 @@
 }
 
 .cookie-link {
-  color: #a3bffa;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -41,12 +41,12 @@
 }
 
 .cookie-banner .btn-primary {
-  background: #667eea;
+  background: #5B6FED;
   color: #fff;
 }
 
 .cookie-banner .btn-primary:hover {
-  background: #5a67d8;
+  background: #4C5FDE;
 }
 
 .cookie-banner .btn-secondary {
